@@ -873,3 +873,63 @@
     background-color: white;
     box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
 }
+
+
+/* ---------------------- */
+
+.k-Acceleration-box .k-dropdrop-main-detail-heading{
+    padding-left: 32px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.k-Acceleration-box {
+    background: #F2F2FD;
+}
+.k-border-right {
+    padding-right: 0px !important;
+}
+.k-dropdown-box2 .k-dropdrop-main-detail-box{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.k-dropdown-box2 {
+    padding: 0px;
+} 
+.k-border-left{
+    margin-right: 15px;
+}
+.k-Acceleration-box{
+    margin: 0px !important;
+    width: 100%;
+    padding: 7px 10px 7px 0px;
+}
+
+
+.k-border-left .k-dropdrop-main-detail-box {
+
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.k-dropdrop-main-detail-box-salesforce{
+    margin-bottom: 30px !important;
+}
+.k-Acceleration-box-a {
+    padding: 10px 0px;
+    margin-left: 10px;
+}
+.k-Acceleration-box:hover .k-Acceleration-box-a {
+    background: #DEDEFF;
+    border-radius: 4px;
+}
+.k-Acceleration-box-a a{
+    position: relative;
+    left: -15px;
+}
+
+.k-Acceleration-box-a .k-dropdrop-main-detail-subheading{
+    padding-left: 65px;
+}
+
+.k-Acceleration-box-a img{
+    margin-right: 1px !important;
+}
