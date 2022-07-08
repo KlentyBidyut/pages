@@ -434,7 +434,7 @@
 .k-nav-btn-try{
     cursor: pointer;
     border-radius: 4px;
-    height: 35px;
+    height: 41px;
     margin: 5px 0px;
     padding: 0px !important;
     width: 150px; 
@@ -831,9 +831,7 @@
     text-decoration:underline ;
 }
 .k-footer-end{
-   
-    margin-top: 40px;
-    padding-top: 20px;
+   background-color: #f6f7fe;
 }
 .k-footer-end p,.k-footer-end a{
     font-size: 14px;
