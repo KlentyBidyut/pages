@@ -233,16 +233,16 @@ html {
     color:#ADB5BD !important;
     opacity: 1 !important; 
     text-transform: capitalize;
-  }
+}
   
-  .kt-signup-form .kt-btn-primary{
-      border: 0px !important;
-      outline: none !important;
-      position: relative !important;
-      left: -5px;
+.kt-signup-form .kt-btn-primary{
+    border: 0px !important;
+    outline: none !important;
+    position: relative !important;
+    left: -5px;
     font-size: 14px;
-      border-radius: 0px 4px 4px 0px !important;
-  }
+    border-radius: 0px 4px 4px 0px !important;
+}
 
 
 
