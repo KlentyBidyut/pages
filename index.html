@@ -15,7 +15,7 @@
  
 </head>
 
-<body>
+<body onload="initialize()"">
  <!-- navbar -->
 
  <div class="k-navbar cd-morph-dropdown k-add-nav-shadow">
@@ -335,11 +335,13 @@
             Here, we have given an overview of the different roles in sales and listed the salaries that salespeople earn in different countries, the best places to work in the U.S. and companies that pay the highest salaries for salespeople.
           </p>
         </div>
-        <div class="hero-img-box">
-          <img src="/images/landing_Image.png" class="img-style"/>
+        <div class="hero-img-box d-none d-md-block">
+          <img src="/images/landing_Image.png" class="img-style "/>
         </div>
-           
       </div>
+    </div>
+    <div class="hero-img-box col-12 p-0 d-block d-md-none">
+      <img src="/images/landing_Image_mobile.png" class="img-style"/>
     </div>
   </div>
   <!-- SalesSaleries landingpage --end -->
@@ -354,18 +356,27 @@
       <p class="salesSalaries-sales-team-para mw-873">The Assembly Line sales team structure is a popular option among small and mid-sized companies and SaaS startups. This structure ensures a low-stress environment as it breaks down the sales process into individual tasks and every person is assigned a specific task.</p>
 
       <img src="/images/salesTeam.png" class="salesSalaries-sales-team-img"/>
+      <img src="/images/salesTeam_mobile.png" class="salesSalaries-sales-team-img-mobile img-fluid"/>
       <div class="row">
-        <div class="col-12 col-sm-6">
+        <div class="col-0 col-md-6 d-none d-md-block">
         </div>
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-md-3">
           <div class="salesSalaries-sales-team-text-container salesSalaries-sales-team-text-container-1">
-            <h4>Sales Development Team</h4>
+            <div class="row align-items-center d-md-none mb-12">
+              <img class="col-2" src="/images/no1_mobile.png" />
+              <h4 class="col-10 p-0">Sales Development Team</h4>
+            </div>
+            <h4 class="d-none d-xl-block">Sales Development Team</h4>
             <p>Comprising sales development representatives (SDRs), this team is at the front end of an organization’s sales team. Using prospect research, SDRs set up sales sequences that include a series of emails, LinkedIn activities, cold calls or texts, to engage with prospects and book a meeting with them. Once a meeting has been booked, these leads are handed over to the Account Executive Team.</p>
           </div>
         </div>
-        <div class="col-12 col-sm-3">
+        <div class="col-12 col-md-3">
           <div class="salesSalaries-sales-team-text-container salesSalaries-sales-team-text-container-2">
-            <h4>Account Executive Team</h4>
+            <div class="row align-items-center d-md-none mb-12">
+              <img class="col-2" src="/images/no2_mobile.png" />
+              <h4 class="col-10 p-0">Account Executive Team</h4>
+            </div>
+            <h4 class="d-none d-xl-block">Account Executive Team</h4>
             <p>The account executives (AEs) work with a singular goal of closing the deal. AEs do one more round of qualification to ensure they have a need to buy the product or 
               service, identify the pain points of these leads  and accordingly initiate 
               steps to close the sale.</p>
@@ -384,11 +395,12 @@
   <!--Sales-Salaries-Roles --start -->
   <div class="salesSalaries-roles">
     <div class="container">
-      <img src="/images/salesSalaries_roles.png" class="img-fluid">
-      <div class="row">
+      <img src="/images/salesSalaries_roles.png" class="img-fluid d-none d-md-block">
+      <div class="row flexgap-20">
         <div class="col-12 col-sm-4">
           <div class="salesSalaries-roles-text-container mt-0">
             <h4>Role of a Sales Development Representative (SDR)</h4>
+            <img src="/images/salesSalaries-roles-1-mobile.png" class="d-block d-md-none">
             <p>Irrespective of whether SDRs are Inbound or Outbound, their goal is to book meetings with the prospects and hand them over to the AEs.</p>
             <p>Inbound SDRs qualify the leads provided by the marketing team, book a meeting with qualified leads and then hand them over to the AEs.</p>
             <p>Outbound SDR or Business Development Representatives (BDRs) go online to find prospects looking for the product or service you’re selling. They make a prospect list, reach out to them via cold emails/cold calls/cold LinkedIn outreach to book a meeting.</p>
@@ -397,12 +409,14 @@
         <div class="col-12 col-sm-4">
           <div class="salesSalaries-roles-text-container mx-297">
             <h4>Role of an Account<br> Executive (AE)</h4>
+            <img src="/images/salesSalaries-roles-2-mobile.png" class="d-block d-md-none">
             <p>AEs further qualify the leads brought in by SDRs by adopting lead qualification methodologies such as BANT and MEDDIC and will vet the prospects during the discovery call. Next steps include scheduling the demo to understand the prospects’ needs and confirming intent to buy. After the demo, AEs handle objections, follow up with prospects, and negotiate until the deal is closed. </p>
           </div>
         </div>
         <div class="col-12 col-sm-4">
           <div class="salesSalaries-roles-text-container mt-18">
             <h4>Role of a Sales Manager</h4>
+            <img src="/images/salesSalaries-roles-3-mobile.png" class="d-block d-md-none">
             <p>Sales Managers lead the sales team of an organization. They take care of hiring and training team members, coming up with a strategic sales plan, setting quotas and KPIs for SDRs and AEs, evaluating the team’s performance and periodically making necessary adjustments to boost sales.</p>
           </div>
         </div>
@@ -417,17 +431,21 @@
   <div class="salesSalaries-techCompanies">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-9">
-          <h2>How much are the <span class="color-purple">biggest tech companies</span> paying their salespeople?</h2>
+        <div class="col-12 col-xl-9">
+          <h2>How much are the <br class="d-block d-md-none"><span class="color-purple">biggest tech companies</span><br class="d-block d-md-none"> paying their salespeople?</h2>
         </div>
-        <div class="col-0 col-md-3">
-          <img class="position-absolute aws-logo-position" src="/images/aws.png" alt="amazon-img">
-          <img class="position-absolute dropbox-logo-position" src="/images/dropBox.png" alt="dropbox-img">
+        <div class="col-0 col-xl-3 d-none d-xl-block">
+          <!-- aws -->
+          <img class="position-absolute company-logo aws-active-logo-position" aria-company="aws" src="/images/aws-active.png" alt="amazon-img">
+          <img class="position-absolute company-logo companyNameSelect aws-logo-position" aria-company="aws" src="/images/aws.png" alt="amazon-img">
+          <!-- dropbox -->
+          <img class="position-absolute company-logo dropbox-active-logo-position" aria-company="dropbox" src="/images/dropBox-active.png" alt="dropbox-img">
+          <img class="position-absolute company-logo companyNameSelect dropbox-logo-position" aria-company="dropbox" src="/images/dropBox.png" alt="dropbox-img">
         </div>
       </div>
       <div class="individualTab">
         <div class="row justify-content">
-        <div class="col-12 col-md-3 position-relative">
+        <div class="col-12 col-xl-3 position-relative">
           <div class="salesSalaries-techCompanies-buttonDiv">
             <button class="salesSalaries-techCompanies-button">Lucid Software</button><img class="downArrow" src="/images/bxs_up-arrow.png"/>
           </div>
@@ -442,23 +460,37 @@
               <p class="companyNameSelect" aria-company="google">Google</p>
               <p class="companyNameSelect" aria-company="microsoft">Microsoft</p>
               <p class="companyNameSelect" aria-company="redhat">Red hat</p>
-              <p class="companyNameSelect" aria-company="amazonwebservices">Amazon Web Services</p>
+              <p class="companyNameSelect" aria-company="aws">Amazon Web Services</p>
               <p class="companyNameSelect" aria-company="adobe">Adobe</p>
               <p class="companyNameSelect" aria-company="dropbox">Dropbox</p>
             </div>
         </div>
         </div>
-        <div class="col-0 col-md-9">
-          <img class="position-absolute microsoft-logo-position" src="/images/microsoft.png" alt="microsoft-img">
-          <img class="position-absolute google-logo-position" src="/images/google.png" alt="google-img">
-          <img class="position-absolute appdynamics-logo-position" src="/images/appDynamics.png" alt="appdynamics-img">
+        <div class="col-0 col-xl-9 d-none d-xl-block">
+          <!-- microsoft -->
+          <img class="position-absolute company-logo microsoft-active-logo-position" src="/images/microsoft-active.png" aria-company="microsoft" alt="microsoft-img">
+          <img class="position-absolute company-logo companyNameSelect microsoft-logo-position" src="/images/microsoft.png" aria-company="microsoft" alt="microsoft-img">
+          <!-- google -->
+          <img class="position-absolute company-logo google-active-logo-position" aria-company="google" src="/images/google-active.png" alt="paloalto-img">
+          <img class="position-absolute company-logo companyNameSelect google-logo-position" aria-company="google" src="/images/google.png" alt="google-img">
+          <!-- appdynamics -->
+          <img class="position-absolute company-logo appdynamics-active-logo-position" aria-company="appdynamics" src="/images/appdynamics-active.png" alt="appdynamics-img">
+          <img class="position-absolute company-logo companyNameSelect appdynamics-logo-position" aria-company="appdynamics" src="/images/appdynamics.png" alt="appdynamics-img">
+          <!-- lucid -->
           <img class="position-absolute company-logo lucid-active-logo-position logoActive" aria-company="lucidsoftware" src="/images/lucid-active.png" alt="Lucid-img">
           <img class="position-absolute company-logo companyNameSelect lucid-logo-position logoHide" aria-company="lucidsoftware" src="/images/lucid.png" alt="Lucid-img">
+          <!-- paloalto -->
           <img class="position-absolute company-logo paloalto-active-logo-position" aria-company="paloaltonetworks" src="/images/paloAlto-active.png" alt="paloalto-img">
           <img class="position-absolute company-logo companyNameSelect paloalto-logo-position" aria-company="paloaltonetworks" src="/images/paloAlto.png" alt="paloalto-img">
-          <img class="position-absolute redHat-logo-position" src="/images/redHat.png" alt="redHat-img">
-          <img class="position-absolute twilio-logo-position" src="/images/twilio.png" alt="twilio-img">
-          <img class="position-absolute adobe-logo-position" src="/images/adobe.png" alt="adobe-img">
+          <!-- redhat -->
+          <img class="position-absolute company-logo redhat-active-logo-position" aria-company="redhat" src="/images/redhat-active.png" alt="redHat-img">
+          <img class="position-absolute company-logo companyNameSelect redhat-logo-position" aria-company="redhat" src="/images/redhat.png" alt="redHat-img">
+          <!-- twilio -->
+          <img class="position-absolute company-logo twilio-active-logo-position" aria-company="twilio" src="/images/twilio-active.png" alt="twilio-img">
+          <img class="position-absolute company-logo companyNameSelect twilio-logo-position" aria-company="twilio" src="/images/twilio.png" alt="twilio-img">
+          <!-- adobe -->
+          <img class="position-absolute company-logo adobe-active-logo-position" aria-company="adobe" src="/images/adobe-active.png" alt="adobe-img">
+          <img class="position-absolute company-logo companyNameSelect adobe-logo-position" aria-company="adobe" src="/images/adobe.png" alt="adobe-img">
         </div>
       </div>
       <div class="salesSalaries-techCompanies-graphContainer">
@@ -471,29 +503,57 @@
             <div class="col-12 col-sm-4">
               <img src="/images/lucid_graph_1.png" class="graphImg lucid" alt="graph-1"/>
               <img src="/images/paloalto_graph-1.png" class="graphImg paloalto hidegraph" alt="graph-1"/>
+              <img src="/images/google-graph-1.png" class="graphImg google hidegraph" alt="graph-1"/>
+              <img src="/images/redhat-graph-1.png" class="graphImg redhat hidegraph" alt="graph-1"/>
+              <img src="/images/adobe-graph-1.png" class="graphImg adobe hidegraph" alt="graph-1"/>
+              <img src="/images/appdynamics-graph-1.png" class="graphImg appdynamics hidegraph" alt="graph-1"/>
+              <img src="/images/microsoft-graph-1.png" class="graphImg microsoft hidegraph" alt="graph-1"/>
+              <img src="/images/twilio-graph-1.png" class="graphImg twilio hidegraph" alt="graph-1"/>
+              <img src="/images/aws-graph-1.png" class="graphImg aws hidegraph" alt="graph-1"/>
+              <img src="/images/dropbox-graph-1.png" class="graphImg dropbox hidegraph" alt="graph-1"/>
+              <h4 class="salesSalaries-techCompanies-graphName d-block d-md-none">Sales Development Representative salary</h4>
             </div>
             <div class="col-12 col-sm-4">
               <img src="/images/lucid_graph_2.png" class="graphImg lucid" alt="graph-2"/>
-              <img src="/images/paloalto_graph-2.png" class="graphImg paloalto hidegraph" alt="graph-1"/>
+              <img src="/images/paloalto_graph-2.png" class="graphImg paloalto hidegraph" alt="graph-2"/>
+              <img src="/images/google-graph-2.png" class="graphImg google hidegraph" alt="graph-2"/>
+              <img src="/images/redhat-graph-2.png" class="graphImg redhat hidegraph" alt="graph-2"/>
+              <img src="/images/adobe-graph-2.png" class="graphImg adobe hidegraph" alt="graph-2"/>
+              <img src="/images/appdynamics-graph-2.png" class="graphImg appdynamics hidegraph" alt="graph-2"/>
+              <img src="/images/microsoft-graph-2.png" class="graphImg microsoft hidegraph" alt="graph-2"/>
+              <img src="/images/twilio-graph-2.png" class="graphImg twilio hidegraph" alt="graph-2"/>
+              <img src="/images/aws-graph-2.png" class="graphImg aws hidegraph" alt="graph-2"/>
+              <img src="/images/dropbox-graph-2.png" class="graphImg dropbox hidegraph" alt="graph-2"/>
+              <h4 class="salesSalaries-techCompanies-graphName d-block d-md-none">Account Executive salary</h4>
             </div>
             <div class="col-12 col-sm-4">
               <img src="/images/lucid_graph_3.png" class="graphImg lucid" alt="graph-3"/>
-              <img src="/images/paloalto_graph-3.png" class="graphImg paloalto hidegraph" alt="graph-1"/>
+              <img src="/images/paloalto_graph-3.png" class="graphImg paloalto hidegraph" alt="graph-3"/>
+              <img src="/images/google-graph-3.png" class="graphImg google hidegraph" alt="graph-3"/>
+              <img src="/images/redhat-graph-3.png" class="graphImg redhat hidegraph" alt="graph-3"/>
+              <img src="/images/adobe-graph-3.png" class="graphImg adobe hidegraph" alt="graph-3"/>
+              <img src="/images/appdynamics-graph-3.png" class="graphImg appdynamics hidegraph" alt="graph-3"/>
+              <img src="/images/microsoft-graph-2.png" class="graphImg microsoft hidegraph" alt="graph-3"/>
+              <img src="/images/twilio-graph-2.png" class="graphImg twilio hidegraph" alt="graph-3"/>
+              <img src="/images/aws-graph-2.png" class="graphImg aws hidegraph" alt="graph-3"/>
+              <img src="/images/dropbox-graph-2.png" class="graphImg dropbox hidegraph" alt="graph-3"/>
+              <h4 class="salesSalaries-techCompanies-graphName d-block d-md-none">Sales Manager salary</h4>
             </div>
           </div>
         </div>
-        
-        <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-sm-4">
-            <h4 class="salesSalaries-techCompanies-graphName">Sales Development Representative salary</h4>
-          </div>
-          <div class="col-12 col-sm-4">
-            <h4 class="salesSalaries-techCompanies-graphName">Account Executive salary</h4>
-          </div>
-          <div class="col-12 col-sm-4">
-            <h4 class="salesSalaries-techCompanies-graphName">Sales Manager salary</h4>
-          </div>
+        <div class="d-none d-md-block">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-sm-4">
+              <h4 class="salesSalaries-techCompanies-graphName">Sales Development Representative salary</h4>
+            </div>
+            <div class="col-12 col-sm-4">
+              <h4 class="salesSalaries-techCompanies-graphName">Account Executive salary</h4>
+            </div>
+            <div class="col-12 col-sm-4">
+              <h4 class="salesSalaries-techCompanies-graphName">Sales Manager salary</h4>
+            </div>
         </div>
+      </div>
       </div>
       </div>
       
@@ -502,7 +562,7 @@
         <button class="nrmlbutton_individual active">Individual</button>
         <button class="nrmlbutton_consolidated">Consolidated</button>
       </div>
-      <div class="tableBorder">
+      <div class="tableBorder mobile_scroll_table">
         <table style="width: 100%;">
           <thead>
               <tr class="headerTab">
@@ -705,16 +765,97 @@
     <div class="container">
       <div class="salesSalaries-highestSale-textContainer">
         <h3>
-          Which industry has the <span class="color-purple">highest sales salaries</span>?
+          Which industry has<br class="d-block d-sm-none"> the <span class="color-purple">highest sales salaries</span>?
         </h3>
-        <p>Here are some of the sales jobs that pay well, according to Indeed, and the Occupational Outlook Handbook of the U.S. Bureau of Labor Statistics.</p>
+        <p>Here are some of the sales jobs that pay well, <br class="d-block d-sm-none">according to Indeed, and the Occupational<br class="d-block d-sm-none"> Outlook Handbook of the U.S. Bureau of<br class="d-block d-sm-none"> Labor Statistics.</p>
       </div>
       <div class="salesSalaries-highestSale-graph">
-        <img src="/images/highestSale.png" class=""/>
+        <img src="/images/highestSale.png" class="d-none d-md-block"/>
+        <div class="d-block d-md-none">
+          <div class="row gy-10 justify-content-center">
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+            <div class="col-4 text-center">
+              <p class="salesSalaries-highestSale-cost">$115,462</p>
+              <img class="salesSalaries-highestSale-cost-img" src="/images/saas_1.png"/>
+              <p class="salesSalaries-highestSale-cost-img-title">Account Executive (SaaS)</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
   <!-- Highest Sale section --end -->
+
+  <!-- Globe section --start -->
+  <div class="salesSalaries-globe">
+    <!-- <div id="globeViz"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h2 class="salesSalaries-globe-header">What are <span class="color-purple"> sales people around the world</span> making in 
+            <br>a year?</h2>
+          <p class="salesSalaries-globe-para">To give you an overview of the sales 
+            salaries for the roles of sales representative and sales manager worldwide, we have shortlisted the countries with the highest nominal GDPs as per the World Economic Outlook data (April 2022) put together by the International Monetary Fund and grouped into the four country regions: North American Region (NAMER), Latin America (LATAM) Asia-Pacific (APAC) and Europe, the Middle East and 
+            <br>Africa (EMEA).</p>
+        </div>
+        <div class="col-6"> 
+          <div id="map"></div>
+          <div id="coords"></div>
+          <div id="layercontrol">
+            Grand Canyon opacity:<br>
+            0<input type="range" id="opacity2" min="0" max="1" step="0.01" value="0.7">1<br>
+          </div>
+        </div>
+        <div class="col-3">
+          <h2 class="salesSalaries-globe-InfoHead">EMEA</h2>
+          <div class="salesSalaries-globe-borderline"></div>
+          <div class="salesSalaries-globe-countries">
+            <div class="salesSalaries-globe-country-container uk active" aria-country="uk">United Kindom</div>
+            <div class="salesSalaries-globe-country-container france" aria-country="france">France</div>
+            <div class="salesSalaries-globe-country-container germany" aria-country="germany">Germany</div>
+            <div class="salesSalaries-globe-country-container nigeria" aria-country="nigeria">Nigeria</div>
+            <div class="salesSalaries-globe-country-container egypt" aria-country="egypt">Egypt</div>
+            <div class="salesSalaries-globe-country-container southafrica" aria-country="southafrica">South Africa</div>
+            <div class="salesSalaries-globe-country-container israel" aria-country="israel">Israel</div>
+            <div class="salesSalaries-globe-country-container uae" aria-country="uae">United Arab Emirates (UAE)</div>
+          </div>
+          <p class="salesSalaries-globe-info-para minw-272 first-para">In the United Kingdom, the average base salary of sales representatives is around £28,000 ($34,386.38) per year, which couldvary between £15,000 ($18,421.27) and £53,000 ($65,088.50) per year.</p>
+          <p class="salesSalaries-globe-info-para minw-272 sec-para">For sales managers, around £42,000 ($51,579.57) per year would be the average base pay. The starting sales manager salary could be around £24,000 ($29,474.04) and could go as high as £75,000 ($92,106.37) per year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Globe section --end -->
 
   <!-- UshighestSales --start -->
   <div class="salesSalaries-usHighestSales">
@@ -746,7 +887,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row flex-column-reverse flex-sm-row
+      ">
         <div class="col-12 col-sm-3">
           <!-- newyork -->
           <div class="salesSalaries-usHighestSales-info newyork_city cityinfo_show" >
@@ -829,7 +971,7 @@
             <h3 class="salesSalaries-usHighestSales-info-cash">$110,000 to $468,000</h3>
           </div>
           <!-- San Francisco -->
-          <div class="salesSalaries-usHighestSales-info sanfrancisco_city" >
+          <div class="salesSalaries-usHighestSales-info sanfrancisco_city position-relative" >
             <h4 class="salesSalaries-usHighestSales-info-city">San Francisco</h3>
             <img src="/images/eclipseStick.png"/>
             <p>SDRs in San Francisco would earn between $50,000 to $145,000 per year and the average base pay of sales managers would be between $72,000 to $600,000 per year.</p>
@@ -883,7 +1025,7 @@
             <input type="radio" id="lakecity" name="country" value="lakecity" class="checkboxStyle lakecityCheckbox" aria-cityName="lakecity"/>
             <img src="/images/marker.png" for="lakecity" class="marker lakecityMarker"/>
           </form>
-          <img src="/images/us_map.png"/>
+          <img class="salesSalaries-usHighestSales-mapImage" src="/images/us_map.png"/>
         </fieldset>
         </div>
       </div>
@@ -896,13 +1038,14 @@
     <div class="container">
       <div class="salesSalaries-careerPath-textContainer">
         <h3>
-          What is an SDR’s career path?
+          What is an SDR’s<br class="d-block d-md-none"> career path?
         </h3>
       </div>
-      <div class="salesSalaries-careerPath-imgContainer">
+      <div class="salesSalaries-careerPath-imgContainer d-none d-md-block">
         <img src="/images/mountains.png" class="img-fluid"/>
       </div>
     </div>
+    <img src="/images/mountains_mobile.png" class="img-fluid d-block d-md-none"/>
   </div>
   <!-- Career Path section --end -->
 </body>
@@ -1065,37 +1208,116 @@
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-
+<style>
+  html, body{padding: 0; margin: 0;}
+  #map{top: 0; right: 0; bottom: 0; left: 0; background-color: #000; position: absolute !important;}
+  #coords{position: absolute; bottom: 10px; right: 10px; z-index: 100000;}
+  #buttons {position: absolute; top:10px; left: 10px;}
+  #layercontrol{position: absolute; top:10px; right: 10px;}
+</style>
 
 <script src="./script.js"></script>
+  <script src="https://www.webglearth.com/v2/api.js"></script>
+  <script>
+    var map;
+    function init() {
+      map = WE.map('map', {
+        center: [36.057944835, -112.18688965],
+        zoom: 2,
+        dragging: true,
+        scrollWheelZoom: false
+      });
+      
+
+      var baselayer = WE.tileLayer('https://webglearth.github.io/webglearth2-offline/{z}/{x}/{y}.jpg', {
+        tileSize: 256,
+        bounds: [[-85, -180], [85, 180]],
+        minZoom: 0,
+        maxZoom: 16,
+        attribution: 'WebGLEarth example',
+        tms: true
+      }).addTo(map);
+
+      //Add TileJSON layer
+      var json = {"profile": "mercator", "name": "Grand Canyon USGS", "format": "png", "bounds": [-112.26379395, 35.98245136, -112.10998535, 36.13343831], "minzoom": 10, "version": "1.0.0", "maxzoom": 16, "center": [-112.18688965, 36.057944835, 13], "type": "overlay", "description": "", "basename": "grandcanyon", "tilejson": "2.0.0", "sheme": "xyz", "tiles": ["http://tileserver.maptiler.com/grandcanyon/{z}/{x}/{y}.png"]};
+      var grandcanyon = WE.tileLayerJSON(json);
+      grandcanyon.addTo(map);
+
+      grandcanyon.setOpacity(0.7);
+      document.getElementById('opacity2').addEventListener('change', function(e) {
+        grandcanyon.setOpacity(e.target.value);
+      });
+      WE.marker([json.center[1], json.center[0]]).addTo(map);
 
 
-
-
-<script>
-    $(window).scroll(function () {
-      var scroll = $(window).scrollTop();
-
-      if (scroll >= 50) {
-        $(".navbar").addClass("scrollEffect");
-      } else {
-        $(".navbar").removeClass("scrollEffect");
-      }
-    });
-
-
-    var arr = [
-      {city:"New York",desc:"The average base pay of an SDR would range between $50,800 to $199,000 per year in New York. The sales manager would draw between $65,000 to $740,000 per year on average.",range1:"$50,800 to $199,000",range2:"$65,000 to $740,000"},
-      {city:"Seattle",desc:"In Atlanta, average base pay of SDRs would be between $55,300 to $110,000 per year. For sales managers, the average base pay would range between $143,000 to $590,000 per year.",range1:"$55,300 to $110,000",range2:"$143,000 to $590,000"},
-      {city:"Boston",desc:"The average base pay of an SDR would range between $50,000 to $115,000 per year in Boston. The sales manager would draw between $100,000 to $560,000 per year on average.",range1:"$50,000 to $115,000",range2:"$100,000 to $560,000"}
-    ]
-
-    getCityInfo();
-
-    function getCityInfo(){
-      var city = document.getElementById("findCity").value;
-      console.log("findCity",city);
+      //Print coordinates of the mouse
+      map.on('mousemove', function(e) {
+        document.getElementById('coords').innerHTML = e.latlng.lat + ', ' + e.latlng.lng;
+      });
     }
-</script>
+
+    function addSomeMarkers() {
+      document.getElementById('addmarkers').disabled = true;
+
+      map.setView([51.505, 0], 5);
+      var marker = WE.marker([51.5, -0.09]).addTo(map);
+      marker.bindPopup("<b>Hello world!</b><br>I am a popup.<br /><span style='font-size:10px;color:#999'>Tip: Another popup is hidden in Cairo..</span>", {maxWidth: 150, closeButton: true}).openPopup();
+
+      var marker2 = WE.marker([30.058056, 31.228889]).addTo(map);
+      marker2.bindPopup("<b>Cairo</b><br>Yay, you found me!<br />Here, enjoy another polygon..", {maxWidth: 120, closeButton: false});
+
+      var polygonA = WE.polygon([[50, 1], [51, 0.5], [50.5, 2.5]]).addTo(map);
+      var polygonB = WE.polygon([[50, 3], [51, 2.5], [50.5, 4.5]], {
+        color: '#ff0',
+        opacity: 1,
+        fillColor: '#f00',
+        fillOpacity: 0.1,
+        weight: 2
+      }).addTo(map);
+
+      var anotherPolygon = function(e) {
+        WE.polygon([[30, 30], [29, 31], [30, 32], [32, 32], [31, 30]], {
+          color: '#000',
+          opacity: 1,
+          fillColor: '#0f0',
+          fillOpacity: 0.7,
+          weight: 2
+        }).addTo(map);
+        marker2.off('click', anotherPolygon);
+      };
+      marker2.on('click', anotherPolygon);
+    }
+
+    function setZoom(zoom) {
+      map.setZoom(zoom);
+    }
+
+    function getZoomLevel() {
+      alert('Current zoom is: ' + Math.round(map.getZoom()));
+    }
+
+    function setPositionToEverest() {
+      map.setView([27.988056, 86.925278]);
+    }
+
+    function getCurrentCenter() {
+      alert(map.getCenter());
+    }
+
+    function flyToJapan() {
+      map.fitBounds([[22, 122], [48, 154]]);
+      map.panInsideBounds([[22, 122], [48, 154]],
+              {heading: 90, tilt: 25, duration: 1});
+    }
+
+    function panTo(coords) {
+      map.panTo(coords);
+    }
+  </script>
+  <style>
+    html, body{padding: 0; margin: 0; background-color: black;}
+    #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
+  </style>
+
 </body>
 </html>

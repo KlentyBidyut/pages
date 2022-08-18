@@ -8,7 +8,6 @@
     color: var(--color-blue);
 }
 
-
 /* colors --end */
 
 
@@ -114,6 +113,11 @@ body button{
     transform: scale(0.98);
     margin-left: 32px;
     position: absolute;
+    display: block;
+}
+
+.salesSalaries-sales-team-img-mobile{
+    display: none;
 }
 
 .salesSalaries-sales-team-text-container{
@@ -228,11 +232,18 @@ body button{
 }
 
 .hidegraph{
-    transition: all .4s;
+    transition: all 1s;
     width: 0;
+    left: 0;
     opacity: 0;
     position: absolute;
 }
+
+.showgraph{
+    transition: all 1s;
+    opacity: 1 !important;
+}
+
 
 .salesSalaries-techCompanies-buttonDiv{
     padding: 12px 32px;
@@ -289,7 +300,47 @@ body button{
 .logoActive{
     opacity: 1 !important;
     transition: all 0.8s;
+    animation: logoScale 4s ease-in infinite;;
 }
+
+@keyframes logoScale{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.08);
+    }
+    50%{
+        transform: scale(1.04);
+    }
+    75%{
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* @keyframes logoScale{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.08);
+    }
+    40%{
+        transform: scale(1);
+    }
+    60%{
+        transform: scale(1.04);
+    }
+    80%{
+        transform: scale(0.96);
+    }
+    100%{
+        transform: scale(1);
+    }
+} */
 
 .logoHide{
     opacity: 0 !important;
@@ -297,8 +348,13 @@ body button{
 }
 
 .aws-logo-position{
-    transform: scale(0.9);
     left: 40px;
+}
+
+.aws-active-logo-position{
+    left: 37px;
+    top: -11px;
+    opacity: 0;
 }
 
 .dropbox-logo-position{
@@ -306,9 +362,21 @@ body button{
     left: 164px;
 }
 
+.dropbox-active-logo-position{
+    top: 29px;
+    left: 162px;
+    opacity: 0;
+}
+
 .microsoft-logo-position{
     top: 86px;
     left: 156px;
+}
+
+.microsoft-active-logo-position{
+    top: 79px;
+    left: 155px;
+    opacity: 0;
 }
 
 .google-logo-position{
@@ -316,9 +384,21 @@ body button{
     left: 264px;
 }
 
+.google-active-logo-position{
+    top: 35px;
+    left: 247px;
+    opacity: 0;
+}
+
 .appdynamics-logo-position{
     top: -45px;
     left: 323px;
+}
+
+.appdynamics-active-logo-position{
+    top: -51px;
+    left: 321px;
+    opacity: 0;
 }
 
 .lucid-logo-position{
@@ -343,9 +423,15 @@ body button{
     opacity: 0;
 }
 
-.redHat-logo-position{
+.redhat-logo-position{
     top: -52px;
     right: 208px;
+}
+
+.redhat-active-logo-position{
+    top: -68px;
+    right: 199px;
+    opacity: 0;
 }
 
 .twilio-logo-position{
@@ -353,8 +439,20 @@ body button{
     right: 150px;
 }
 
+.twilio-active-logo-position{
+    top: 106px;
+    right: 147px;
+    opacity: 0;
+}
+
 .adobe-logo-position{
     right: 36px;
+}
+
+.adobe-active-logo-position{
+    right: 26px;
+    top: -17px;
+    opacity: 0;
 }
 
 /* .salesSalaries-techCompanies .tableBorder{
@@ -493,6 +591,87 @@ body button{
 }
 /* Highest Sale --end*/
 
+/* Globe Section --start */
+
+.salesSalaries-globe{
+    background-color: #161F69;
+    padding: 88px 0;
+}
+
+.salesSalaries-globe-header{
+    font-family: 'Paytone One';
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 64px;
+    color: #FFFFFF;
+    min-width: 504px;
+    margin-bottom: 24px;
+}
+
+.salesSalaries-globe-para{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    min-width: 323px;
+}
+
+
+.salesSalaries-globe-InfoHead{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.24em;
+    color: #FFFFFF;
+}
+
+.salesSalaries-globe-borderline{
+    width: 79px;
+    height: 2px;
+    background-color: #504EE4;
+    margin-bottom: 24px;
+}
+
+.salesSalaries-globe-info-para{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    min-width: 323px;
+}
+
+.salesSalaries-globe-countries{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.salesSalaries-globe-country-container{
+    width: fit-content;
+    padding: 8px 16px;
+    color: #ffffff;
+    background-color: #4C4C80;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #504EE4;
+}
+
+.minw-272{
+    width: 272px !important;
+    min-width: 272px;
+}
+
+
+
+/* Globe Section --end */
+
 /* Us Highest Sales --start */
 
 .salesSalaries-usHighestSales{
@@ -630,7 +809,6 @@ body button{
 .marker{
     position: absolute;  
     opacity: 0;
-    transform: scale(0.9) translateY(-5px);
     animation: popping 1.6s ease-in infinite;
     transition: all .4s;
 }
@@ -741,7 +919,6 @@ body button{
 
 input:checked+.marker{
     opacity: 1 !important;
-    transform: scale(0.9) translateY(0) !important;
 }
 
 
@@ -790,3 +967,307 @@ input:checked+.marker{
     margin-bottom: 40px;
 }
 /* CareerPath --end*/
+
+
+@media only screen and (max-width:1400px){
+    /* landing section --start */
+    .img-style{
+        position: relative;
+        width: 100%;
+        right: inherit;
+        top: inherit;
+    }
+    /* landing section --end */
+}
+
+@media only screen and (max-width:1200px){
+    /* landing section --start */
+    /* landing section --end */
+
+    /* SalesSalaries SalesTeam --start */
+    /* SalesSalaries SalesTeam --end */
+}
+
+@media only screen and (max-width:1000px){
+    /* landing section --start */
+    /* landing section --end */
+
+    /* SalesSalaries SalesTeam --start */
+    /* SalesSalaries SalesTeam --end */
+}
+
+@media only screen and (max-width:800px){
+    /* landing section --start */
+    /* landing section --end */
+
+    /* SalesSalaries SalesTeam --start */
+    /* SalesSalaries SalesTeam --end */
+}
+
+@media only screen and (max-width:600px){
+    /* landing section --start */
+    .salesSalaries-landing{
+        padding: 80px 0 20px;
+    }
+    .hero-bg{
+        height: fit-content;
+    }
+    .salesSalaries-landing-head{
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 8px;
+    }
+    .salesSalaries-landing-para{
+        font-size: 14px;
+        line-height: 21px;
+        padding-right: 9px;
+        margin-bottom: 12px;
+    }
+    /* landing section --end */
+
+    /* SalesSalaries SalesTeam --start */
+    .salesSalaries-sales-team{
+        margin-top: -34px;
+    }
+    .salesSalaries-sales-team-head{
+        font-size: 22px;
+        margin: 0;
+    }
+    .salesSalaries-sales-team-para{
+        font-size: 12px;
+    }
+    .salesSalaries-sales-team-img{
+        display: none;
+    }
+    .salesSalaries-sales-team-img-mobile{
+        display: block;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .mw-873{
+        margin-bottom: 40px;
+    }
+    .salesSalaries-sales-team-text-container-1,.salesSalaries-sales-team-text-container-2{
+        position: initial;
+    }
+    .salesSalaries-sales-team-text-container{
+        max-width: 100%;
+    }
+    .salesSalaries-sales-team .row{
+        height: fit-content;
+    }
+    .salesSalaries-sales-team-text-container h4{
+        margin: 0;
+    }
+
+    /* SalesSalaries SalesTeam --end */
+
+
+    /* SalesSalaries roles --end */
+    .mb-12{
+        margin-bottom: 12px;
+    }
+    .salesSalaries-roles-text-container{
+        margin: auto !important;
+        max-width: 100%;
+    }
+    .mx-297{
+        max-width: 100%;
+    }
+    .flexgap-20{
+        grid-row-gap: 20px;
+    }
+
+    /* SalesSalaries roles --end */
+
+    /* SalesSalaries techCompanies --start */
+    .salesSalaries-techCompanies{
+        overflow: hidden;
+    }
+    .salesSalaries-techCompanies h2{
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .salesSalaries-roles-text-container h4{
+        margin-bottom: 20px;
+    }
+    .salesSalaries-techCompanies-buttonDiv{
+        margin: auto;
+    }
+    .salesSalaries-techCompanies-graphContainer{
+        margin-top: 16px;
+        padding: 24px 36px;
+    }
+    .salesSalaries-techCompanies-buttontab{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 36px;
+    }
+    .graphImages{
+        position: initial;
+        height: fit-content;
+    }
+    .graphImg{
+        width: 100%;
+    }
+    body button{
+        padding: 8px 16px;
+    }
+    .salesSalaries-techCompanies-graphName{
+        margin-top: 16px;
+        margin-bottom: 36px;
+    }
+
+    .mobile_scroll_table{
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .salesSalaries-techCompanies table tbody td{
+        font-size: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .individualTab .stateSelectContainer {
+        left: 18px !important;
+        width: 90% !important;
+    }
+
+    .salesSalaries-techCompanies .stateSelectContainer .countryContainer p {
+        margin-bottom: 0px;
+        font-size: 11px;
+    }
+
+    .salesSalaries-techCompanies .individualTab .arrow {
+        left: auto !important;
+        right: 80px !important;
+    }
+
+    .salesSalaries-techCompanies .stateSelectContainer{
+        height: 208px;
+    }
+
+    .vrline{
+        height: 176px;
+    }
+    /* SalesSalaries techCompanies --end */
+
+    /* SalesSalaries highestSale --start */
+    .salesSalaries-highestSale{
+        height: fit-content;
+        padding: 25px 0;
+    }
+
+    .salesSalaries-highestSale-textContainer{
+        position: initial;
+        padding-top: 24px;
+        text-align: center;
+    }
+
+    .salesSalaries-highestSale-textContainer h3{
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+    .salesSalaries-highestSale-textContainer p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .salesSalaries-highestSale-graph img{
+        margin: 0;
+    }
+
+    .salesSalaries-highestSale-cost{
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        color: #393C56;
+        margin-bottom: 4px;
+    }
+
+    .salesSalaries-highestSale-cost-img{
+        margin-bottom: 4px !important;
+    }
+
+    .salesSalaries-highestSale-cost-img-title{
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 12px;
+    }
+    /* SalesSalaries highestSale --end */
+
+    /* SalesSalaries-careerPath --start */
+
+    .salesSalaries-careerPath{
+        padding: 48px 0;
+        height: fit-content;
+    }
+
+    .salesSalaries-careerPath-textContainer{
+        max-width: 100%;
+        position: initial;
+        top: 0;
+    }
+    .salesSalaries-careerPath-textContainer h3{
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    /* SalesSalaries-careerPath --end */
+
+
+    /* Us Highest Sales --start */
+
+    .salesSalaries-usHighestSales-head{
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+    }
+
+
+    .salesSalaries-usHighestSales-para,.salesSalaries-usHighestSales-info img{
+        display: none;
+    }
+
+    .salesSalaries-usHighestSales-mapImage{
+        width: 100%;
+    }
+
+    .checkboxStyle{
+        transform: scale(0.7);
+    }
+
+    @keyframes popping{
+        0%   {transform:scale(0.4) translateY(-5px);}
+        65%  {transform: scale(0.4);}
+        100%  {transform:scale(0.4) translateY(-5px)}
+    }
+
+    .newyorkMarker {
+        right: 9.9%;
+        top: 3%;
+    }
+
+    .newyorkCheckbox {
+        right: 64px;
+        top: 52px;
+    }
+
+    .seattleMarker{
+        top: -19px;
+        left: 47px;
+    }
+
+    .seattleCheckbox {
+        top: 26px;
+        left: 74px;
+    }
+
+    /* Us Highest Sales --end */
+}
