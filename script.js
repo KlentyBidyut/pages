@@ -60,7 +60,6 @@ $(document).ready(function() {
     $(".k-nav-mobile-container").removeClass('k-mob-display');
     setTimeout(() =>  $(".k-nav-mobile-container").removeClass('k-mob-opacity'), 1);
 });
-  
 // button style
 $('.nrmlbutton_individual').click(function(){
   $('.nrmlbutton_consolidated').removeClass('active');
@@ -81,6 +80,14 @@ $('.salesSalaries-usHighestSales-stateButton,.salesSalaries-techCompanies-button
   $('.stateSelectContainer').css("display","block !important").toggle();
 })
 
+$('#crmValue').click(function(){
+  var value = $('select#aioConceptName option:selected').val();
+//   // var e=document.getElementById("aioConceptName");
+//   // var value=e.value;
+//   var $option = $(this).find('option:selected');
+//   var value = $option.val();
+  console.log("value",value);
+})
 
 // us map javascipt
 $('.checkboxStyle,.buttonCity').click(function(){
@@ -312,5 +319,6 @@ $(window).scroll(function () {
 
  
 });
+
 
 

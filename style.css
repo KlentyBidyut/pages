@@ -633,6 +633,12 @@ body button{
     margin-bottom: 24px;
 }
 
+.salesSalaries-globe-mapCss{
+    margin-top: 100px;
+    transform: scale(.98);
+    float: right;
+}
+
 .salesSalaries-globe-info-para{
     font-weight: 400;
     font-size: 14px;
