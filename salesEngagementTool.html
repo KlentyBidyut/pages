@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sales Engagement Tool</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/globalCSS.css">
+        <link rel="stylesheet" href="/navbarStyle.css" />
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <form class="form" method="post">
+            <label style="display:block">Name:</label>
+            <input id="salesName" type="text" placeholder="enter name"/>
+            <label style="display:block">Email:</label>
+            <input id="salesEmail" type="email" placeholder="enter email"/>
+            <select style="display:block;margin-top: 20px;" id="aioConceptName" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="val();">
+                <option value="customersuccess" class="crmValue">Customer Success</option>
+                <option value="closingteams" class="crmValue" selected="selected">Closing Teams</option>
+                <option value="salesdevelopment" class="crmValue">Sales Development</option>
+            </select>
+
+            <!-- inBound and OutBound -->
+            <select style="display:block;margin-top: 20px;" id="bound" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="val();">
+                <option value="inbound" class="selectBound">Inbound</option>
+                <option value="outbound" class="selectBound" selected="selected">Outbound</option>
+            </select>
+
+
+            <!-- <fieldset>
+                <label for="c1"> <input type="checkbox" name="company" value="zoho" id="c1">Zoho</label>
+                <label for="c2"><input type="checkbox" name="company" value="hubspot" id="c2"> Hubspot</label>
+                <label for="c3"><input type="checkbox" name="company" value="pipedrive" id="c3">Pipedrive</label>
+                <label for="c4"><input type="checkbox" name="company" value="salesforce" id="c4">Salesforce</label>
+                <label for="c5"><input type="checkbox" name="company" value="others" id="c5">Others</label>
+            </fieldset> -->
+
+            <!-- checkbox -->
+            <div>
+                <input type="checkbox" id="email" name="contact" value="email">
+                <label for="email">Email</label>
+        
+                <input type="checkbox" id="phone" name="contact" value="phone">
+                <label for="phone">Phone</label>
+        
+                <input type="checkbox" id="mail" name="contact" value="mail">
+                <label for="mail">Mail</label>
+            </div>
+            <!-- checkbox -->
+
+            <label style="display:block">Sales Count:</label>
+            <input id="salesCount" type="number" placeholder="enter sales count"/>
+            <input onclick="location.href='/questionsHtml.html';" id="button" type="submit">
+        </form>
+
+    </body>
+    <script>
+        function val() {
+            d = document.getElementById("aioConceptName").value;
+            // bound = document.getElementById("bound").value;
+            // console.log("d",d);
+            return d;
+        }
+        d=val();
+        console.log("d",d);
+        document.querySelector('form.form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let x = document.querySelector('form.form').elements;
+            let radiobutton = document.querySelectorAll('input[name="company"]:checked');
+            var radios = document.getElementsByName('contact');
+            var data=[];
+            for (var radio of radios)
+            {
+                if (radio.checked) {
+                    data.push(radio.value);
+                }
+            }
+
+            console.log(data);
+            var storeData=[];
+            storeData.push(radiobutton);
+            localStorage.setItem("initialformdata", storeData);
+        })
+    </script>
+</html>

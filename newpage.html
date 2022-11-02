@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  </head>
+  <style>
+  .header{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+  .flexContainer{
+    display:flex;
+    align-items:center;
+  }
+  .imgContainer img{
+    width: 46px;
+    margin-right: 3px;
+  }
+  .textContainer{
+    border-left: 1px solid #504EE4;
+    padding-left: 6px;
+  }
+  .textContainer img{
+    width: 6px;
+    margin-right: 4px;
+  }
+  .textContainer p{
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  .textSubHEAD{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    margin-bottom: 6px !important;
+  }
+  
+  .textSubText{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: #000000;
+  }
+  
+  button{
+    background: #504EE4;
+    background-blend-mode: darken;
+    border-radius: 4px;
+    border:none;
+    color:#fff;
+    padding: 4px 6px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+  }
+  .row{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+  }
+  .row img{
+    margin-right: 8px;
+  }
+  .linkedinImg{
+    width: 8px;
+  }
+  </style>
+  <body>
+    <h1 class="header">Vijay Kumar</h1>
+    <!-- <div>
+      <div class="flexContainer">
+        <div class="imgContainer">
+           <img src="../Vijay/images/logo.png">
+        </div>
+        <div class="textContainer">
+          <p class="textSubHEAD">Visual Designer</p>
+          <div class="textSubText"><img src="../Vijay/images/phone.png"> <p>+91 9042614812</p></div>
+          <div class="textSubText"><img src="../Vijay/images/calendar.png"> <p>Schedule a Demo</p></div>
+          <div class="textSubText"><img src="../Vijay/images/linkedin.png"> <p>LinkedIn</p></div>
+        </div>
+      </div> -->
+      <table>
+        <tr>
+          <td>
+            <div class="imgContainer">
+              <img src="./images/logo.png">
+            </div>
+          </td>
+          <td>
+            <div class="textContainer">
+              <p class="textSubHEAD">Visual Designer</p>
+              <div class="textSubText"><img src="./images/phone.png"> <p>+91 9042614812</p></div>
+              <!-- <div class="textSubText"><img src="./images/calendar.png"> <p>Schedule a Demo</p></div>
+              <div class="textSubText"><img src="./images/linkedin.png"> <p>LinkedIn</p></div> -->
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="row">
+      <div>
+        <img src="./images/linkedin.png" class="linkedinImg">
+      </div>
+      <div>
+        <button>Schedule a Demo > > ></button>
+      </div>
+    </div>
+  </body>
+</html>

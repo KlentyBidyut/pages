@@ -1,0 +1,827 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.k-navbar-brand{
+    margin-left: 50px;
+}
+
+.landing-section{
+    padding-top: 80px;
+}
+.k-logo-hide{
+    display: none;
+}
+.k-payton{
+    font-family: 'Paytone One', sans-serif;
+}
+.k-col-db{
+    color: #05034E;
+}
+.zoho-landing-section{
+    overflow: hidden;
+    background: url('../images/zohoCrmAcceleration/land-bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    padding-top: 80px;
+  
+}
+.zoho-landing{
+    display: flex;
+}
+.zoho-landing-left{
+    padding-top: 40px;
+    padding-left: 140px;
+    color: white;
+}
+.zoho-header{
+    font-size: 27px;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 10px;
+}
+.hero-form form {
+    margin-top: 30px;
+    width: 400px;
+    display: flex;
+}
+.hero-form input{
+    height: 50px;
+    background: transparent;
+}
+.hero-form input::placeholder{
+    color: white;
+}
+.hero-form button{
+    margin-left: 15px;
+}
+.zoho-header span{
+    color: #FFD600;
+}
+.zoho-main-header{
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 20px;
+}
+.zoho-subheader{
+    font-size: 16px;
+}
+.zoho-landing-right{
+    position: relative;
+}
+.land-dex{
+    position: absolute;
+    left: 60px;
+}
+.flex-center{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.triangle1{
+    position: absolute;
+    left: 180px;
+} 
+.triangle2{
+    position: absolute;
+    left: 160px;
+} 
+
+.zoho-1-num{
+    color: white;
+    font-size: 75px;
+    line-height: 45px;
+    margin-right: 20px;
+    padding-right: 15px;
+    margin: 0px !important;
+}
+.zoho-box-line{
+    position: relative;
+    left: 25px;
+    margin-top: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 33px;
+    color: #FFFFFF;
+    width: 235px;
+}
+.zoho-right-1{
+   position: absolute;
+    top: 22%;
+    left:180px; 
+}
+.zoho-right-2{
+    position: absolute;
+    top: 22%;
+    left: 490px;
+}
+
+.zoho-right-3{
+    position: absolute;
+    left:180px; 
+    top: 55%;
+    background: url(../images/zohoCrmAcceleration/box3.png);
+    background-size: contain;
+    width: 270px;
+    height: 230px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+}
+.zoho-right-3 ul {
+    padding: 0px 10px 10px 40px;
+}
+.zoho-right-3 ul li {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 6px;
+    color: #FFFFFF;
+}
+.zoho-box1-title{
+    color: #FFFFFF;
+    font-size: 22px;
+    padding: 20px 20px 0px;
+    margin-bottom: 0x !important;
+}
+.zoho-box1-title img{
+    margin-right: 10px;
+}
+.zoho-right-4{
+    position: absolute;
+    left:480px; 
+    top: 55%;
+    background: url(../images/zohoCrmAcceleration/box4.png);
+    background-size: contain;
+    width: 270px;
+    height: 230px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+}
+.box-show{
+    background-color: #FFFFFF;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: relative;
+}
+.box-show::before{
+    content: "";
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 10;
+    background: white;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 41%;
+}
+.box-show1{
+    position: absolute;
+    bottom: 35%;
+    left: 9%;
+}
+.box-show2{
+    position: absolute;
+    bottom: 47%;
+    left: 49%;
+}
+.box-show3{
+    position: absolute;
+    bottom: 58%;
+    right: 5%;
+}
+
+.video-section {
+   
+    padding: 100px 0px 0px;
+}
+.k-video {
+    width: 70%;
+    height: 450px;
+}
+@media (max-width: 500px){
+    .k-video {
+        width: 90%;
+        height: 200px;
+    }
+    .video-section {
+   
+        padding: 60px 0px;
+    }
+}
+@media (min-width: 1550px){
+    .zoho-landing-left{
+        padding-left: 230px;
+    }
+ 
+}
+@media (min-width: 1650px){
+    .zoho-landing-left {
+        padding-left: 300px;
+    }
+  
+    .zoho-right-4 {
+        left: 580px;
+    }
+    .zoho-right-2 {
+        left: 600px;
+    }
+}
+
+@media (min-width: 1750px){
+.zoho-landing-left {
+    padding-left: 320px;
+}
+
+}
+@media (min-width: 1850px){
+    .zoho-landing-left {
+        padding-left: 380px;
+    }
+  
+}
+
+
+
+
+
+
+
+
+/* section 2 */
+
+.s2-title{
+    font-size: 32px;
+    color: #05034E;
+    margin-bottom: 0px;
+    margin-top: 21px;
+}
+.s2-icon-box{
+    padding: 0px 15px;
+}
+.section2{
+    height: 140px;
+  background: #E5E5E5;
+}
+.s2-icon-wraper{
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+}
+.s2-icon{
+
+}
+
+.s2-icon-box p{
+    margin-top: 7px;
+}
+
+
+
+
+
+/* section 2 */
+
+.section3{
+    padding: 100px 0px;
+}
+.s3-title{
+    font-size: 30px;
+    
+}
+.s3-box {
+    margin-top: 150px;
+}
+.s3-topheader{
+    font-family: Inter;
+   font-weight: 600;
+    font-size: 16px;
+    text-align: center; 
+    border-radius: 28px;
+    display:inline-block;
+    padding: 7px 22px;
+}
+.bg-violet{
+    color: #684BB9;  
+    background: rgba(139, 116, 201, 0.33);
+    opacity: 0.55;
+    backdrop-filter: blur(4px);
+}
+.img-s3-box2{
+    position: relative;
+    right: 50px;
+}
+.img-s3-box1{
+    position: relative;
+    left: 50px;
+}
+.bg-brown{
+    color: #95325A;
+    
+    background:#E3CAD4;
+    opacity: 0.55;
+    backdrop-filter: blur(4px);
+}
+.s3-box span{
+    font-weight: bold;
+}
+.zoho-img-box{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+}
+.img-s3-box{
+    width: 100%;
+}
+.s3-header{
+    font-size: 25px;
+    line-height: 35px;
+    color: #05034E;
+    margin-bottom: 30px;
+}
+.ul-violet{
+    margin-left: 20px;
+    list-style-image: url('../images/zohoCrmAcceleration/check-blue.png');
+
+}
+.s3-box .ul-brawn{
+    margin-left: 20px;
+    list-style-image: url('../images/zohoCrmAcceleration/check-brown.png');
+}
+.s3-box li{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding-left: 15px;
+    line-height: 22px;
+    color: #505050;
+
+}
+
+.s4-text{
+    z-index: 2;
+    color: white;
+}
+.s4-box{
+    position: relative;
+    width: 750px;
+    height: 150px;
+    color: white;
+    margin-bottom: 120px;
+    background: linear-gradient(264.71deg, #BC0166 0%, #45035A 15.15%, #4C0610 27.5%, #0E0C4D 36.56%, #50028D 60.99%, #6040DC 74.16%, #DB6DEE 89.96%);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .7s;
+    overflow: hidden;
+}
+.s4-box:hover{
+    transform: scale(1.03);
+    background: linear-gradient(94.62deg, #561005 -0.91%, #5E0C11 9.93%, #2F0032 18.54%, #0F0C52 42.28%, #340974 62.97%, #100C94 108.75%);
+}
+.s4-box:hover p{
+    text-decoration: none !important;
+}
+.s4-box:hover {
+    text-decoration: none !important;
+}
+.section4{
+    display: flex;
+    justify-content: center;
+}
+.w-arrow{
+    width: 30px;
+    height:30px;
+}
+.box-icon1{
+    max-width: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section5 */
+
+
+.section5{
+    background: #F2F2FD;
+    padding: 60px 0px;
+}
+.quote-brown{
+    width: 140px;
+}
+
+.s5-header{
+    font-size: 38px;
+    margin-top: 20px;
+    color: #05034E;
+    line-height: 55px;
+    padding-left: 120px;
+    margin-bottom: 20px;
+}
+
+.s5-box{
+    margin-left: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 250px 111px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    padding: 30px 50px 40px 40px;
+    position: relative;
+}
+.quote-blue{
+    position: absolute;
+    top: 105px;
+    left: 20px;
+}
+.s5-text{
+    font-family: Inter;
+    font-size: 15px;
+    margin-top: 20px;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #18191F;
+    line-height: 30px;
+}
+.s5-box-profile{
+    display: flex;
+    margin-top: 30px;
+}
+.s5-box-profile p{
+    margin-bottom: 3px;
+}
+.s5-box-profile-right{
+    padding-left: 20px;
+}
+.s5-profile-img{
+    width: 55px;
+}
+
+.s5-profile-name{
+    font-weight: bold;
+    font-size: 18px;
+    color: #18191F;
+}
+.s5-profile-post{
+    font-weight: 500;
+    font-size: 14px;
+    color: #969BAB;
+    
+}
+.s5-box2{
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+.bottom-title{
+    font-size: 36px;
+    margin-top: 150px;
+    color: #05034E;
+    margin-bottom: 40px;
+}
+
+/* arrow button */
+.btn-arrow p{ 
+    font-weight: 700;  
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    padding: 12px 16px;
+    margin-bottom: 0px !important;
+    transition: .3s;
+    transform: translateX(5px);  
+}
+.btn-blue p{
+    color: #FFFFFF !important;
+}
+.btn-blue {
+    background: #5856CE !important;
+}
+.btn-arrow i{
+    transition: .3s;    
+    opacity: 0;
+    transform: translateX(-3px); 
+}
+.k-cta:hover{
+    text-decoration: none !important;
+}
+.btn-arrow:hover p{
+    transform: translateX(-2px);
+    text-decoration: none !important;
+}
+.btn-arrow:hover i{
+    opacity: 1;
+    transform: translateX(9px);  
+    text-decoration: none !important;
+}
+.btn-arrow{
+    padding: 0px !important;
+}
+.section5{
+    padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar */
+.k-navbar2 {
+    position: fixed;
+    width: 100%;
+    padding: 5px 0px;
+    top: 0;
+    z-index: 101;
+    transition: background-color 400ms linear;
+}
+.k-container {
+    display: flex;
+    justify-content: space-between;
+}
+.k-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1300px;
+}
+.k-container-wrapper {
+    position: relative;
+}
+.k-navbar2 .k-navbar-brand img {
+    width: 100px;
+}
+.k-container-right .btn-arrow p {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.k-add-nav-shadow{
+    background-color: white;
+    box-shadow: 0 2px 2px -2px rgb(0 0 0 / 20%);
+}
+
+.nav-btn{
+    position: relative;
+    top: 5px;
+}
+
+.toolbar{
+    display: none;
+}
+
+.k-nav-btn-try{
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    border: .5px solid white;
+    background: #5856CE;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 35px;
+    margin: 5px 0px;
+    padding: 0px !important;
+    width: 150px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.k-nav-btn-try svg{
+    position: relative;
+    top: 5px;
+
+}
+.k-nav-btn-try p{
+    position: relative;
+    bottom: 6px;
+    left: 7px;
+    color: #FFFFFF;
+    margin-bottom: 0px !important;
+}
+
+.zoho-landing-section{
+    position: relative;
+}
+.scroll-down-box{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.scroll-down-box:hover{
+    cursor: pointer;
+}
+
+
+
+/* ---- */
+.hideNavRegister{
+    display: block !important;
+}
+.redcolor{
+    color: red;
+    background: red;
+}
+
+
+
+/* ------------------ */
+.section-4-form form {
+    margin-top: 30px;
+    width: 400px;
+    display: flex;
+}
+.section-4-form .form-control {
+    display: block;
+    width: 274px;
+    padding: 12px 25px;
+    border: 1.5px solid #5856CE !important;
+    margin-right: -5px;
+    color: #5856CE !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    background: #F3F3FC;
+    border-radius: .25rem 0 0 .25rem !important;
+}
+.section-4-form .btn {
+    width: 140px;
+    background-color: #5856CE;
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+    color: white;
+    padding: 12px 25px;
+    border: 1px solid #5856CE;
+    border-radius: 0px 4px 4px 0px!important;
+    font-weight: 600;
+}
+.center-box{
+    display: flex;
+    justify-content: center;
+}
+.section-4-form .btn-arrow p {
+    margin-left: 13px !important;
+    font-size: 12px;
+    padding: 15px 5px;
+}
+.btn-arrow i {
+    transform: translateX(-12px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.footer-section{
+    padding-top: 15px;
+    background-color: #F4F4F4;
+    color: #464646 !important;
+    font-size: 12px;
+}
+.footer-section a{
+    color: #464646 !important;
+    margin-bottom: 0px !important;
+}
+.footer-section li{
+    
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 12px;
+    margin-bottom: 0px !important;
+}
+
+.footer-section ul{
+    margin-bottom: 0px !important;
+}
+
+
+@media (max-width: 600px){
+    .zoho-landing-left {
+        padding-left: 20px;
+    }
+    .k-navbar-brand {
+        margin-left: 0px;
+    }
+    .section2 {
+        height: 100%;
+        background: #E5E5E5;
+    }
+    .s2-title {
+        text-align: center;
+    }
+    .img-s3-box2 {
+        position: relative;
+        right: 0px;
+    }
+    .col-revers{
+        flex-direction: column-reverse;
+    }
+    .s3-box img{
+        margin-top: 50px;
+    }
+    .zoho-main-header{
+        font-size: 67px;
+        line-height: 66px;
+    }
+    .s4-box {
+        position: relative;
+        width: 90%;
+    }
+    .s5-header {
+        font-size: 30px;
+        margin-top: 20px;
+        color: #05034E;
+        line-height: 43px;
+        padding-left: 50px;
+        margin-bottom: 20px;
+    }
+    .quote-brown {
+        width: 100px;
+    }
+    .s5-box {
+        margin-left: 0px;
+    }
+    .s5-box2 {
+        width: 100%;
+    }
+    .img-s3-box1 {
+        position: relative;
+        left: 0px;
+    }
+}
+
+@media (max-width: 450px){
+
+    .zoho-header {
+        font-size: 19px;
+    }
+    .zoho-main-header {
+        font-size: 46px;
+        line-height: 53px;
+    }
+    .zoho-subheader {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .hero-form form{
+        width: 100%;
+
+    }
+    .zoho-landing-section {
+        height: 750px;
+    }
+    .s2-title {
+        font-size: 22px;
+    }
+    .s4-box{
+        justify-content: center;
+        padding: 0px 30px;
+    }
+    .bottom-title {
+        font-size: 26px;
+    }
+}
