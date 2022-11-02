@@ -10,6 +10,10 @@
 
 /* colors --end */
 
+body{
+    background-color: #F5F5F5 !important;
+}
+
 
 /* common container css --start */
 
@@ -654,7 +658,7 @@ body button{
     margin-bottom: 40px;
 }
 
-.salesSalaries-globe-country-container{
+.salesSalaries-globe-country-container-emea,.salesSalaries-globe-country-container-namer,.salesSalaries-globe-country-container-apac,.salesSalaries-globe-country-container-latam{
     width: fit-content;
     padding: 8px 16px;
     color: #ffffff;
@@ -674,7 +678,59 @@ body button{
     min-width: 272px;
 }
 
+.subStates{
+    display: none;
+}
 
+.show{
+    display: block !important;
+}
+
+.globecheckboxStyle{
+    transform: scale(1.8);
+    opacity: 1;
+    width: 20px;
+    position: absolute;
+    opacity: 0;
+}
+
+.globecheckboxStyle:checked{
+    opacity: 1;
+    animation: waving 1.6s ease-in infinite;
+}
+
+@keyframes waving {
+    0%{
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(1.7);
+    }
+    100%{
+        transform: scale(2);
+    }
+}   
+
+
+.namerCheckbox{
+    top: 205px;
+    left: 146px;
+}
+
+.emeaCheckbox{
+    top: 236px;
+    left: 350px;
+}
+
+.apacCheckbox{
+    top: 260px;
+    right: 82px;
+}
+
+.latamCheckbox{
+    top: 490px;
+    left: 98px;
+}
 
 /* Globe Section --end */
 
@@ -926,8 +982,6 @@ body button{
 input:checked+.marker{
     opacity: 1 !important;
 }
-
-
 
 
 
@@ -1261,19 +1315,176 @@ input:checked+.marker{
     }
 
     .newyorkCheckbox {
-        right: 64px;
-        top: 52px;
+        right: 17%;
+        top: 23%;
     }
 
     .seattleMarker{
-        top: -19px;
-        left: 47px;
+        top: -7.5%;
+        left: 12.2%;
     }
 
     .seattleCheckbox {
-        top: 26px;
-        left: 74px;
+        top: 11.6%;
+        left: 19.6%;
+    }
+
+    .bostonMarker{
+        top: 8%;
+        right: 4%;
+    }
+
+    .bostonCheckbox{
+        top: 27.8%;
+        right: 10.8%;
+    }
+
+    .philadelphiaCheckbox{
+        top: 35.7%;
+        right: 14.7%;
+    }
+
+    .philadelphiaMarker{
+        top: 16%;
+        right: 8%;
+    }
+
+    .washingtonCheckbox{  
+        top: 40%;
+        right: 17.7%;
+    }
+
+    .washingtonMarker{
+        top: 20%;
+        right: 11%;    
+    }
+
+    .atlantaCheckbox{
+        bottom: 40.4%;
+        right: 27%;
+    }
+
+    .atlantaMarker{
+        right: 19.65%;
+        top: 36%;
+    }
+    
+    .floridaCheckbox{
+        right: 17.8%;
+        bottom: 21.8%;
+    }
+
+    .floridaMarker{
+        bottom: 15%;
+        right: 11%;
+    }
+
+    .lakecityCheckbox{
+        top: 39.7%;
+        left: 29.5%;
+    }
+
+    .lakecityMarker{
+        left: 22%;
+        top: 20%;
+    }
+
+    .sanfranciscoCheckbox{
+        top: 39%;
+        left: 13.7%;
+    }
+
+    .sanfranciscoMarker{
+        left: 6.7%;
+        top: 20%;
+    }
+
+    .losangelesCheckbox{
+        left: 20.2%;
+        bottom: 36.7%;
+    }
+
+    .losangelesMarker{
+        bottom: 31%;
+        left: 13%;
     }
 
     /* Us Highest Sales --end */
+
+    /* globe section */
+    .salesSalaries-globe-mapCss{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .salesSalaries-globe-header{
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        min-width: fit-content;
+    }
+
+    .salesSalaries-globe-para{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    .namerCheckbox{
+        left: 22.8%;
+        top: 16%;
+    }
+
+    .emeaCheckbox{
+        top: 21%;
+        left: 53%;
+    }
+
+    .apacCheckbox{
+        top: 25%;
+        right: 13%;
+    }
+
+    .latamCheckbox{
+        top: 61%;
+        left: 15.5%;
+    }
+
+    .salesSalaries-globe-InfoHead{
+        text-align: center;
+    }
+
+    .salesSalaries-globe-countries{
+        justify-content: center;
+    }
+
+    .salesSalaries-globe-borderline{
+        margin: auto;
+        margin-bottom: 24px;
+    }
+
+    .salesSalaries-globe-info-para{
+        text-align: center;
+        margin: auto;
+        padding: 0 34px;
+        width: 100% !important;
+        margin-bottom: 12px;
+    }
+
+    body button{
+        font-size: 12px;
+    }
+
+    .stateSelectContainer{
+        left: 24% !important;
+        top: 52px;
+    }
+
+    .salesSalaries-usHighestSales-info{
+        margin-left: 0;
+        max-width: 100%;
+        top: 0;
+        padding: 0 20px;
+    }
+    /*  */
 }

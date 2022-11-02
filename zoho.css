@@ -1,0 +1,1013 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* navbar */
+
+
+
+
+
+/* navbar end */
+
+/* heading start */
+
+.main-heading{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 40px !important;
+    line-height: 68px;
+    color: #05034E !important;
+    margin-top: 210px;
+    margin-bottom: 20px !important;
+}
+.bg-main-heading{
+    font-family: 'Paytone One', sans-serif;
+    padding: 0px 8px 0px 14px;
+    background: url(../images/zoho-images/bg-main.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size:contain;
+}
+
+.sub-heading{
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0px 230px;
+    color: #1F1F1F;
+    margin-bottom: 45px !important;
+    font-weight: 400;
+}
+@media only screen and (min-width:1600px){
+    .sub-heading{
+        padding: 0px 430px;
+    }
+    .gif-section ul{
+        width: 80% !important;
+    }
+}
+
+.gif-section .col-12{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* arrow button */
+.btn-arrow{
+    padding: 0px !important;
+}
+.btn-arrow p{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 12px 16px;
+    margin-bottom: 0px !important;
+    transition: .3s;
+    transform: translateX(5px);  
+}
+.btn-arrow i{
+    transition: .3s;    
+    opacity: 0;
+    transform: translateX(-3px); 
+}
+
+.btn-arrow:hover p{
+    transform: translateX(-2px);
+}
+.btn-arrow:hover i{
+    opacity: 1;
+    transform: translateX(9px);  
+}
+.gif-section .row{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+/* tab section */
+
+
+.repeatable-title{
+    font-family: 'Paytone One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 40px;
+    color: #05034E;
+    margin-top: 150px;
+    margin-bottom: 75px !important;
+}
+.Nav_tabs{
+}
+.nav-link:hover{
+    background: #dfdffd;
+}
+.nav-pills .nav-link.active{
+    background: #D2D2FF;
+    
+}
+.Nav_tabs .nav-link{
+    border: 1px solid #5856CE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.nav-pills .nav-link.active img{
+    opacity: 1;
+}
+.Nav_tabs .nav-link{
+    padding: 12px 50px 12px 30px;height: 108px;
+    display: flex;
+    height: 100px;
+
+    align-items: center;
+    position: relative;
+}
+.Nav_tabs .nav-link img{
+    width: 20px;
+    position: absolute;
+    right: 20px;
+    top: 38px;
+    opacity: 0;
+}
+.box-image{
+    height: 410px;
+    padding: 0px 30px 20px;
+}
+
+.tab-manu-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 17px;
+    color: #00000A;
+    margin-bottom: 8px;
+}
+.tab-manu-subtitle{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #101010;
+    margin-bottom: 0px !important;
+}
+
+.carousel-item-box{
+  height: 470px;
+  display: flex;
+  align-items: center;
+}
+.lis{
+    padding: 0px 10px 0px 50px;
+    list-style-image: url(../images/zoho-images/green\ tick2.png);
+  }
+
+.lis li{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #1A1A1A;
+}
+/* accelerating section */
+.accelerating{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 31px;
+    line-height: 40px;
+    color: #05034E;
+    margin-top: 70px;
+}
+
+.company-logo-image img {
+    filter: grayscale(100%);
+    opacity: .7;
+    height: 50px;
+}
+.owl-carousel1 {
+    padding: 0px 130px;
+}
+
+
+.gif-section{
+    margin-top: 80px;
+    padding: 100px 0px;
+    background: #F2f2FD;
+    display: flex;
+}
+
+.gif-section-h1{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+    margin-bottom: 42px;
+    color: #05034E;
+}
+.gif-section li{
+    font-size: 14px;
+    color: #3D3D3D;
+}
+.first-gif{
+    width: 100%;
+}
+.first-gif-box{
+    width: 120%;
+}
+
+.gif-section ul {
+    position: relative;
+    left: -20px;
+    width: 90%;
+    list-style-image: url(../images/zoho-images/violet-tick.png);
+  }
+  .gif-section ul li{
+      padding-left: 13px;
+    margin-bottom: 20px;
+  }
+.gif-section-copy{
+    padding: 50px ;
+
+}
+
+
+/* tab section mobile start */
+
+.head-wrapper{
+    padding: 30px ;
+    background: #D2D2FF;
+    border-radius: 5px 5px 0px 0px;
+
+}
+.mobile-tab-contain{
+    margin-top: 20px;
+}
+.mobile-tab-box{
+    
+    margin-bottom: 35px;
+    border: 1px solid  #D2D2FF;
+    border-radius:5px ;
+    padding-bottom: 25px;
+}
+.mobile-tab-contain img{
+    padding: 20px;
+}
+.mobile-tab-box .lis li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.mobile-tab-box .lis{
+    padding-left: 70px;
+}
+.mobile-tab-box .tab-manu-subtitle {
+    font-size: 14px;
+    padding: 15px 20px 0px;
+    line-height: 21px;
+}
+
+.mobile-tab-box .tab-manu-title {
+    font-size: 20px;
+}
+
+
+/* tab section mobile end */
+
+
+/* testimonial-section */
+
+.testimonial-section{
+    padding: 50px 0px 80px;
+    margin-top: 80px;
+    background: #F2F2FD;
+}
+.testimonial-heading{
+    font-family: 'Paytone One', sans-serif;
+    font-size: 31px;
+    line-height: 40px;
+    text-align: center;
+    color: #05034E;
+    margin-bottom: 60px !important;
+}
+.testimonial-wrapper{
+   
+    padding: 0px 100px;
+}
+.testimonial-company{
+    max-width: 200px !important;
+}
+.owl-carousel2{
+    box-shadow: 12px 12px 30px rgb(0 0 0 / 8%); 
+    background: white;
+}
+.carousel-item{
+    padding: 65px 120px;
+    display: block;
+}
+.carousel-item-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.testimonial-qoute{
+    width: 60px !important;
+}
+.carousel-comment{
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #202020;
+    padding: 50px 30px;
+}
+.testimonial-profile{
+    width: 60px !important;
+    height: 60px !important;
+}
+.degednation-box{
+    display: flex;
+    justify-content: center;
+}
+.testimonial-name-box{
+    padding-left: 25px;
+}
+.degednation-box-wrapper{
+    display: flex;
+  
+}
+.testimonial-name{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #05034E;
+    margin-bottom: 0px !important;
+}
+.testimonial-profile-position{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #05034E;
+    margin-bottom:0px ;
+}
+.owl-carousel2{
+    position: relative;
+}
+.owl-dots{
+    display: none ;
+}
+.owl-nav{
+    /* font-size: 50px; */
+    position: absolute;
+   top: 47%; 
+}
+.owl-nav svg{
+    padding: 5px;
+    width: 30px !important;
+    height: 30px;
+    color: #49499B;
+    background: #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.owl-nav svg:focus{
+    outline: none !important;
+}
+.owl-nav svg:hover{
+    outline: none !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    outline: none !important;
+}
+
+.owl-prev{
+    position: relative;
+    left: -50px;
+}
+.owl-nav{
+    width: 100%;
+}
+.owl-next{
+    position: relative;
+    left: -87px;
+}
+.owl-next{
+    position: absolute;
+    left: 102%;
+}
+
+/* form-section */
+
+.one-wrapper {
+    display: flex;
+    margin-bottom: 15px !important;
+    color: #05034E;
+}
+.has-one {
+    width: 90px;
+}
+.has-one p {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+}
+.sales {
+    font-family: 'Paytone One', sans-serif;
+    padding-left: 10px;
+    color: #05034E;
+    font-size: 31px;
+    text-align: center;
+    line-height: 43px;
+    padding-top: 35px;
+    position: relative;
+    left: -40px;
+}
+.left-form{
+    margin-top: 50px;
+}
+.pipedrive-img{
+
+}
+.img-label-section {
+    display: flex;
+    margin-top: 60px;
+}
+.lable-img {
+    width: 90px;
+    height: 105px;
+    margin-right: 10px;
+}
+.try-klenty{
+    font-family: 'Paytone One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 31px;
+    line-height: 40px;
+    color: #05034E;
+    margin-top: 40px;
+}
+
+.video-section {
+   
+    padding: 100px 0px 0px;
+}
+.k-video {
+    width: 70%;
+    height: 450px;
+}
+@media (max-width: 1050px){
+    .k-video {
+        width: 80%;
+        height: 370px;
+    }
+   
+}
+@media (max-width: 800px){
+    .k-video {
+        width: 90%;
+        height: 330px;
+    }
+   
+}
+@media (max-width: 500px){
+    .k-video {
+        width: 90%;
+        height: 200px;
+    }
+    .video-section {
+   
+        padding: 60px 0px;
+    }
+}
+.section-4-form form {
+    margin-top: 40px;
+    width: 570px;
+    display: flex;
+}
+
+.section-4-form .form-control {
+    display: block;
+    width: 274px;
+    padding: 12px 25px;
+    border: 1.5px solid #5856CE !important;
+    margin-right: -5px;
+    color: #5856CE !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    background: #F3F3FC;
+    border-radius: .25rem 0 0 .25rem !important;
+}
+.section-4-form .btn {
+    background-color: #5856CE;
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+    color: white;
+    padding: 12px 25px;
+    border: 1px solid #5856CE;
+    border-radius: 0px 4px 4px 0px!important;
+    font-weight: 600;
+}
+
+.form-section{
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer {
+    background-color: #F4F4F4;
+}
+.connect-footer {
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+.footer-logo {
+    width: 103px;
+}
+.connect-title {
+    font-weight: 700;
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul .header {
+    font-weight: 700;
+}
+.footer ul li {
+    padding: 10px 0px;
+}
+.footer ul li a {
+    color: #464646 !important;
+}
+.footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-end {
+    margin-top: 70px;
+    padding: 0px 200px !important;
+    margin-bottom: 0px;
+    height: 100%;
+}
+.footer-end-row {
+    width: 100% !important;
+}
+.footer-end ul {
+    margin-bottom: 0px !important;
+}
+.footer-end ul li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 12px;
+    margin-bottom: 0px !important;
+}
+.footer-item .showDemoRequest{
+    cursor: pointer;
+}
+.footer-item .showDemoRequest:hover{
+    text-decoration: underline !important;
+}
+
+
+@media only screen and (min-width: 1900px) {
+    .repeatable-title {
+        padding: 0px 580px;
+    }
+    .gif-section-copy{
+        padding:150px 50px 0;
+    
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .gif-section-copy {
+        padding: 11px;
+    }
+    .repeatable-title {
+        padding: 0px 200px;
+    }
+    .footer-end {
+        padding: 0px 20px !important;
+    }
+    .sales {
+        left: -10px;
+    }
+    .section-4-form form {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .owl-next {
+        position: absolute;
+        left: 104%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .gif-section-copy {
+        margin-top: 60px;
+        padding-left: 15px;
+    }
+    .gif-section ul {
+        margin-left: 20px;
+    }
+    .gif-section-h1 {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 29px;
+        text-align: center;
+    }
+    .main-heading {
+        padding: 0px 68px;
+        line-height: 57px;
+    }
+    .sub-heading {
+        font-size: 20px;
+        padding: 0px 100px;
+    }
+    .repeatable-title {
+        padding: 0px 100px;
+    }
+    .tab-manu-subtitle {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .Nav_tabs .nav-link {
+        height: 100px;
+        padding: 7px 50px 7px 20px;
+    }
+    .Nav_tabs .nav-link img {
+        top: 40px;
+    }
+    .tab-manu-title {
+        margin-bottom: 0px;
+    }
+    .carousel-item {
+        padding: 40px 30px;
+    }
+    .carousel-comment {
+        padding: 30px 30px;
+    }
+    .sales {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .lable-img {
+        width: 63px;
+        height: 63px;
+        margin-right: 25px;
+    }
+    .section-4-form .form-control {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .main-heading {
+        font-family: 'Paytone One', sans-serif;
+        font-size: 28px !important;
+        line-height: 35px;
+    }
+    .repeatable-title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .tab-manu-title {
+        font-weight: 600;
+        font-size: 16px;
+    }    
+    .Nav_tabs .nav-link {
+        height: 85px;
+    }
+    .tab-manu-subtitle {
+        line-height: 14px;
+    }
+    .Nav_tabs .nav-link img {
+        top: 33px;
+    }
+    .tab-manu-subtitle {
+        font-size: 10px;
+    }
+    .lis{
+        position: relative;
+        left: -20px;
+    }
+    .lis li {
+        margin-bottom: 15px;
+        padding-left: 0px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .accelerating {
+       font-size: 20px;
+        line-height: 40px;
+        margin-top: 70px;
+    }
+    .testimonial-heading {
+         font-size: 22px;
+    }
+    .testimonial-wrapper {
+        padding: 0px 50px;
+    }
+    .owl-nav svg {
+        width: 32px !important;
+        height: 32px;
+    }
+    .carousel-comment {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .owl-prev {
+        position: relative;
+        left: -50px;
+    }
+    .sales {
+        padding-left: 48px;
+        font-size: 31px;
+        line-height: 43px;
+        padding-top: 39px;
+        left: -30px;
+    }
+    .img-label-section {
+        justify-content: center;
+    }
+    .try-klenty {
+        text-align: center;
+    }
+    .section-4-form form {
+        margin-top: 40px;
+        width: 70%;
+    }
+    .section-4-form {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .container {
+        flex-direction: column;
+    }
+    .connect-footer {
+        margin-bottom: 30px;
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width: 431px){
+    .navtab-mobile-section{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .tab-manu-title,.tab-manu-subtitle{
+        text-align: center;
+    }
+    .web-view{
+        display: none;
+   }
+   .box-image {
+    height: auto !important;
+   }
+   .navtab-mobile-section{
+        display: block;
+    }
+    .footer-item ul{
+        position: relative;
+        left: -30px;
+    }
+    .main-heading {
+        font-family: 'Paytone One', sans-serif;
+        font-size: 28px !important;
+        line-height: 44px;
+    }
+    .repeatable-title {
+        padding: 0px 50px;
+    }
+    .accelerating {
+        padding: 0px 20px;
+    }
+    .owl-carousel1 {
+        padding: 0px 20px;
+    }
+    .sub-heading {
+        font-size: 16px;
+        padding: 0px 50px;
+    }
+    .carousel-comment {
+        padding: 30px 00px;
+    }
+    .carousel-item {
+        padding: 20px;
+    }
+    .testimonial-profile {
+        width: 60px !important;
+        border-radius: 50%;
+        height: 60px !important;
+    }
+   
+    .testimonial-profile-position {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 19px;
+    }
+    .testimonial-name-box {
+        padding-left: 10px;
+    }
+    .testimonial-qoute {
+        width: 40px !important;
+        padding: 0px 10px;
+    }
+    .testimonial-wrapper {
+        padding: 0px 25px;
+    }
+    .owl-prev {
+        left: -21px;
+    }
+    .owl-next {
+        left: 95%;
+    }
+    .has-one p {
+        font-family: 'Paytone One', sans-serif;
+        font-weight: 800;
+        font-size: 85px;
+    }
+    .img-label-section {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .lable-img {
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+        margin-right: 0px;
+        padding: 0px 9px;
+    }
+    .img-label-section {
+        display: flex;
+        margin-top: 40px;
+    }   
+    .img-label-section {
+        display: flex;
+        margin-top: 20px;
+    }
+    .sales {
+        padding-left: 48px;
+        font-size: 23px;
+        line-height: 41px;
+        padding-top: 28px;
+        left: -30px;
+    }
+    .section-4-form form {
+        margin-top: 40px;
+        width: 90%;
+    }
+    .connect-footer {
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+    .footer-end-row .col-md-6{
+        position: relative;
+        left:-40px;
+    }
+    .main-heading {
+       font-size: 22px !important;
+    }
+    .main-heading {
+        padding: 0px 14px;  
+        line-height: 36px;
+    }
+    .bg-main-heading {
+        background-size: contain;
+    }
+}
+
+
+
+@media only screen and (max-width: 375px){
+    .main-heading {
+        font-size: 21px !important;
+        line-height: 32px;
+        padding: 0px 28px;
+    }
+    .repeatable-title {
+        font-size: 21px;
+        line-height: 33px;
+    }
+    .sales {
+        padding-left: 48px;
+        font-size: 19px;
+        line-height: 28px;
+        padding-top: 41px;
+        left: -30px;
+    }
+    .testimonial-heading {
+        font-size: 17px;
+    }
+    .navlink {
+        position: relative;
+        right: 0px;
+    }
+    
+}
+
+
+
+
+/* Request Demo Modal */
+.RequestDemo .modelLabel{
+    color: #008ed6;
+    font-weight: 400;
+    font-size: 15px;
+}
+.RequestDemo .required{
+    border-left: 3px solid #aa090f;
+}
+.RequestDemo .modal-content {
+    padding: 10px 30px 30px 30px;
+}
+.RequestDemo .request-modal-content{
+    height: max-content;
+}
+.dark-text {
+    color: #454545;
+    text-align: center;
+}
+.standard-button {
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px !important;
+    border: none !important;
+    padding: 18px 40px 18px 40px !important;
+    color: #ffffff;
+    -webkit-transition: none;
+    transition: none;
+    width: 100%;
+}
+.pointer{
+    cursor: pointer;
+}
+.kl-form{
+    display: -webkit-inline-box;
+}
+.demo_error{
+    color: #aa090f;
+}
+
+
+
+
+.navbar a{
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    color: #05034E !important;
+}
+.navbar .btn {
+    font-size: 14px !important;
+}
+.navbutton .btn {
+    font-weight: 700 !important;
+    padding: 8px 33px !important;
+}
+
+.demo-wrapper  .btn-blue{
+    background: #5856CE !important;
+}
+.k-main-nav .k-main-navlink,.k-dropdrop-main-detail-heading {
+    font-size: 14px;
+}
+.register-dropdown-box .google-icon-wrapper{    
+    left: -5px !important;
+}

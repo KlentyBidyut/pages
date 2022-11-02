@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="With Klenty-Zoho integration you can send emails & follow-ups, automate workflows, and keep track of email engagement metrics from within Zoho CRM.">
+    <meta name="author" content="KlentySoft">
+    <meta name="og:type" content="sales automation" />
+    <meta name="og:image" content="<%=gitSha%>/img/klenty-meta.png" />
+    <meta name="og:site_name" content="Klenty" />
+    <meta name="og:description" content="With Klenty-Zoho integration you can send emails & follow-ups, automate workflows, and keep track of email engagement metrics from within Zoho CRM." />
+    <title>Best Zoho CRM Email Automation Tool | Klenty</title>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<%=gitSha%>/assets/images/index/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="<%=gitSha%>/assets/images/index/owl/owl.theme.default.min.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="<%=gitSha%>/assets/css/KlentyNavbar.css">
+    <link rel="stylesheet" href="<%=gitSha%>/assets/css/zoho.css">
+    <link rel="stylesheet" href="<%=gitSha%>/assets/css/partials/footer.css">
+    <link rel="stylesheet" href="<%=gitSha%>/assets/css/partials/requestDemoUI.css">
+    <link rel="stylesheet" href="<%=gitSha%>/assets/css/partials/navbarRegisterDropdown.css">
+ 
+
+
+  <!-- 2. Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4748906.js"></script>
+ <!-- End of HubSpot Embed Code -->
+
+  <!-- 3 start Gist JS code-->
+  <script>    (function (d, h, w) { var gist = w.gist = w.gist || []; gist.methods = ['trackPageView', 'identify', 'track', 'setAppId']; gist.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); gist.push(e); return gist; } }; for (var i = 0; i < gist.methods.length; i++) { var c = gist.methods[i]; gist[c] = gist.factory(c) } s = d.createElement('script'), s.src = "https://widget.getgist.com", s.async = !0, e = d.getElementsByTagName(h)[0], e.appendChild(s), s.addEventListener('load', function (e) { }, !1), gist.setAppId("v463umau"), gist.trackPageView() })(document, 'head', window);</script>
+  <!-- end Gist JS code--> 
+
+  <!-- 4. Start VWO Async SmartCode -->
+  <script type='text/javascript'>
+    window._vwo_code = window._vwo_code || (function(){
+    var account_id=637851,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    is_spa=1,
+    hide_element='body',
+    /* DO NOT EDIT BELOW THIS LINE */
+    f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.fetchPriority='high';b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+ </script>
+ <!-- End VWO Async SmartCode -->
+
+  <!-- 5. Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68593242-1"></script>
+ <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-68593242-1');
+ </script>
+  <!-- end Global site tag (gtag.js) - Google Analytics -->
+
+
+<!-- 6. Google Analytics -->
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+  analytics.load("iss6YVCfNHFquuiVsR1P8e1buXuAf5xU");
+  analytics.page();
+  }}();
+  </script>
+<!-- end Google Analytics -->
+
+
+ <!-- 7. Google Tag Manager -->
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MPB485Z');</script>
+<!-- end Google Tag Manager -->
+
+<!-- 8. Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<!-- end Calendly -->
+
+<!-- 9. cookieconsent start-->
+<script type="text/javascript">
+	var _iub = _iub || [];
+	_iub.csConfiguration = {
+	  "gdprAppliesGlobally":true,
+	  "enableCcpa": true,
+	  "countryDetection": true,
+	  "consentOnContinuedBrowsing": false,
+	  "perPurposeConsent": true,
+	  "ccpaAcknowledgeOnDisplay": true,
+	  "whitelabel": false,
+	  "lang": "en",
+	  "siteId": 2356234,
+	  "cookiePolicyId": 92758894,
+	  "privacyPolicyUrl": "https://www.klenty.com/privacyPolicy",
+	  "banner": {
+	    "acceptButtonDisplay": true,
+	    "customizeButtonDisplay": true,
+	    "position": "float-bottom-left",
+	    "rejectButtonDisplay": true,
+	    "acceptButtonCaptionColor": "#ffffff",
+	    "customizeButtonColor": "#F3F0FF",
+	    "customizeButtonCaptionColor": "rgba(8.05, 12.13, 43.75, 0.65)",
+	    "applyStyles": "false",
+	  }
+	};
+   </script>
+ 
+ 
+   <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
+   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+   <link rel="stylesheet" href="<%=gitSha%>/assets/css/partials/cookieBanner.css">
+<!-- 9.end cookieconsent -->
+
+
+<!-- 10. Bing ads start-->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"56228054"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+
+<!-- end Bing ads -->
+
+</head>
+<body>
+   <!-- navbar -->
+   <%- include('./partials/klentyNavbarRegister2.ejs'); %>
+  
+  <h1 class="main-heading text-center">Drive <span class="bg-main-heading">sales productivity</span> with Klenty + Zoho </h1>
+
+  <h2 class="sub-heading text-center">Eliminate repetitive tasks with CRM Accelerations. Free up sales reps for critical actions. <br>Propel your sales teams into a state of flow.</h2>
+
+ 
+  <div class="demo-wrapper text-center">
+    <a class="k-dropdown-register" >
+      <button class="btn  btn-blue btn-arrow">
+        <p>Sign up for Free<i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>               
+      </button> 
+    </a>
+  </div>
+  
+
+
+  <div class="video-section container text-center">
+    <iframe class="k-video" src="https://www.youtube-nocookie.com/embed/lLVhAzTohSA?controls=1&amp;showinfo=0&amp;rel=0;&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+  </div>
+
+  
+<h3 class="repeatable-title text-center">Explore the automations that eliminate every repetitive work in Zoho</h3>
+
+<!-- Nav tabs web start -->
+
+<div class="container Nav_tabs web-view">
+ <div class="row">
+   <div class="col-5">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+        <div>
+          <p class="tab-manu-title">Importing Prospects</p>
+          <p class="tab-manu-subtitle">Eliminate Friction. No more CSV export/import.</p>
+          <img src="<%=gitSha%>/assets/images/salesloftAlternative/next.svg" class="arrow-icon">
+        </div>
+      </a>
+      <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">
+        <div>
+          <p class="tab-manu-title">Personalize Campaigns</p>
+          <p class="tab-manu-subtitle">Manage your sales outreach without leaving Zoho.</p>
+          <img src="<%=gitSha%>/assets/images/salesloftAlternative/next.svg" class="arrow-icon">
+        </div>
+      </a>
+      <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">
+        <div>
+          <p class="tab-manu-title">Custom Workflows</p>
+        <p class="tab-manu-subtitle">Work while you sleep with workflows tailored to 
+          your sales outreach.</p>
+          <img src="<%=gitSha%>/assets/images/salesloftAlternative/next.svg" class="arrow-icon">
+        </div>
+      </a>
+      <a class="nav-link" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false">
+        <div>
+          <p class="tab-manu-title">Auto-update CRM</p>
+        <p class="tab-manu-subtitle">Bid good riddance to data entry and manual work.</p>
+        <img src="<%=gitSha%>/assets/images/salesloftAlternative/next.svg" class="arrow-icon">
+        </div>
+      </a>
+      <a class="nav-link" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false">
+        <div>
+          <p class="tab-manu-title">Metric-Driven Sales</p>
+          <p class="tab-manu-subtitle">Avoid intuitive decisions. Measure and optimize.</p>
+          <img src="<%=gitSha%>/assets/images/salesloftAlternative/next.svg" class="arrow-icon">
+        </div>
+      </a>
+    </div>
+  
+   </div>
+   <div class="col-7">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+        <img src="<%=gitSha%>/assets/images/zoho-images/box/importing prospect@2x.png" class="box-image img-fluid">
+        <ul class="lis">
+          <li>Klenty can detect Zoho Views you’ve created for your leads or contacts.</li>
+          <li>Import any lead or contact from a specific filter into Klenty.</li>
+          <li>Select any prospect in Klenty and move instantly into <a href="https://go.zoho.com/rvk" target="_blank">Zoho CRM</a> as leads.</li>
+        </ul>
+  
+  
+      </div>
+      <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+        <img src="<%=gitSha%>/assets/images/zoho-images/box/personal campaigns@2x.png" class="box-image img-fluid">
+        <ul class="lis">
+          <li>Send personalized emails, automate follow-up calls & tasks to cold contacts in-bulk.</li>
+          <li>Ensure email deliverability to your Zoho leads with features like personalization, custom domain tracking, delivery window & cadence throttle.</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+        <img src="<%=gitSha%>/assets/images/zoho-images/box/custom workflows@2x.png" class="box-image img-fluid">
+        <ul class="lis">
+          <li> Auto-import new leads/contacts every 6 hours from as soon as they enter the filter in Zoho CRM.</li>
+          <li>Send personalized campaigns to new leads as soon as they enter a Zoho filter.</li>
+          <li>Auto-create tasks or calls in Zoho CRM for leads based on email engagement in Klenty.</li>
+        </ul>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+        <img src="<%=gitSha%>/assets/images/zoho-images/box/auto update crm@2x.png" class="box-image img-fluid">
+        <ul class="lis">
+          <li>Automatically maintain copies of emails sent/ replies received in Zoho CRM. </li>
+          <li>Automatically sync email opens, clicks, replies and other activities back in Zoho CRM.</li>
+        </ul>
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-5-tab">
+        <img src="<%=gitSha%>/assets/images/zoho-images/box/Metric driven sales@2x.png" class="box-image img-fluid">
+        <ul class="lis">
+          <li>Measure and optimize your email campaigns with A/B testing, Team reports and Cadence reports.</li>       
+          <li>Keep a tab on how the leads are engaging with your emails with real-time updates and approach them when they are hot. </li>
+        </ul>
+      </div>
+    </div>
+   </div>
+ </div>
+</div>
+
+
+<!-- Nav tabs web end -->
+<!-- Nav tabs mobile start -->
+
+<div class=" container navtab-mobile-section">
+  <div class="mobile-tab-box">
+    <div class="head-wrapper">
+      <p class="tab-manu-title">Importing Prospects</p>
+      <p class="tab-manu-subtitle">Eliminate Friction. No more CSV export/import.</p>
+    </div>
+    <div class="mobile-tab-contain">
+      <img src="<%=gitSha%>/assets/images/zoho-images/box/importing prospect@2x.png" class="box-image img-fluid">
+      <ul class="lis">
+        <li>Klenty can detect Zoho Views you’ve created for your leads or contacts.</li>
+        <li>Import any lead or contact from a specific filter into Klenty.</li>
+        <li>Select any prospect in Klenty and move instantly into <a href="https://go.zoho.com/rvk" target="_blank">Zoho CRM</a> as leads.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="mobile-tab-box">
+    <div class="head-wrapper">
+      <p class="tab-manu-title">Personalize Campaigns</p>
+          <p class="tab-manu-subtitle">Manage your sales outreach without leaving Zoho.</p>
+    </div>
+    <div class="mobile-tab-contain">
+      <img src="<%=gitSha%>/assets/images/zoho-images/box/personal campaigns@2x.png" class="box-image img-fluid">
+      <ul class="lis">
+        <li>Send personalized emails, automate follow-up calls & tasks to cold contacts in-bulk.</li>
+        <li>Ensure email deliverability to your Zoho leads with features like personalization, custom domain tracking, delivery window & cadence throttle.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="mobile-tab-box">
+    <div class="head-wrapper">
+      <p class="tab-manu-title">Custom Workflows</p>
+      <p class="tab-manu-subtitle">Work while you sleep with workflows tailored to 
+        your sales outreach.</p>
+    </div>
+    <div class="mobile-tab-contain">
+      <img src="<%=gitSha%>/assets/images/zoho-images/box/custom workflows@2x.png" class="box-image img-fluid">
+      <ul class="lis">
+        <li> Auto-import new leads/contacts every 6 hours from as soon as they enter the filter in Zoho CRM.</li>
+        <li>Send personalized campaigns to new leads as soon as they enter a Zoho filter.</li>
+        <li>Auto-create tasks or calls in Zoho CRM for leads based on email engagement in Klenty.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mobile-tab-box">
+    <div class="head-wrapper">
+      <p class="tab-manu-title">Auto update CRM</p>
+      <p class="tab-manu-subtitle">Bid good riddance to data entry and manual work.</p>
+    </div>
+    <div class="mobile-tab-contain">
+      <img src="<%=gitSha%>/assets/images/zoho-images/box/auto update crm@2x.png" class="box-image img-fluid">
+      <ul class="lis">
+        <li>Automatically maintain copies of emails sent/ replies received in Zoho CRM. </li>
+        <li>Automatically sync email opens, clicks, replies and other activities back in Zoho CRM.</li>
+      </ul>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mobile-tab-box">
+    <div class="head-wrapper">
+      <p class="tab-manu-title">Metric-Driven Sales</p>
+      <p class="tab-manu-subtitle">Avoid intuitive decisions. Measure and optimize.</p>
+    </div>
+    <div class="mobile-tab-contain">
+      <img src="<%=gitSha%>/assets/images/zoho-images/box/Metric driven sales@2x.png" class="box-image img-fluid">
+      <ul class="lis">
+        <li>Measure and optimize your email campaigns with A/B testing, Team reports and Cadence reports.</li>       
+        <li>Keep a tab on how the leads are engaging with your emails with real-time updates and approach them when they are hot. </li>
+      </ul>
+    </div>
+  </div>
+
+
+</div>
+
+
+<div class="gif-section">
+  <div class="row">
+      <div class="col-12 col-lg-7">
+        <video
+          autoplay="true" class="first-gif video-bg" src="<%=gitSha%>/assets/images/zoho-images/zoho-video1.mp4" loop="true" muted="true" playsinline="true"  
+        ></video>
+         <!--  <img src="<%=gitSha%>/assets/images/zoho-images/first_gif.gif" class="img-fluid first-gif">
+   -->
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="gif-section-copy">
+          <div>
+           <p class="gif-section-h1">Manage your Sales Outreach<br> without leaving Zoho</p>
+           <ul>
+             <li>Seamlessly push leads or contacts to Klenty directly from Zoho. Start cadences, send one off emails, and execute tasks from within Zoho. </li>
+    
+             <li> Get notified of prospects's engagement instantly through Live Feed. Followup without skipping a beat. </li>
+                
+               <li>No more switching screens to engage with prospects.</li>
+           </ul>
+          </div>
+       </div>
+      </div>
+  </div>
+ 
+ 
+</div>
+
+
+<!-- Nav tabs mobile end -->
+<h3 class="text-center accelerating">Driving the sales productivity of 5000+ sales teams</h3>
+<div class="container">
+  <div class="campany-list text-center mt-5">
+    <div class="owl-carousel owl-carousel1">
+      
+     <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/2.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/3.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/4.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/5.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/6.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/7.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/8.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/9.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/10.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/11.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/12.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/13.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/14.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/15.svg" class="logo-image">
+      </div>
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/16.svg" class="logo-image">
+      </div>
+       <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/17.svg" class="logo-image">
+      </div>
+      
+      <div class="company-logo-image">
+        <img src="<%=gitSha%>/assets/images/xant/company/18.svg" class="logo-image">
+      </div>
+
+    </div>
+   </div>
+</div>
+
+
+
+<!-- testimonial -->
+
+<div class="testimonial-section">
+  <div class="container">
+    <h3 class="testimonial-heading text-center">What our customers have to say</h3>
+    <div class="testimonial-wrapper">
+      <div class="owl-carousel owl-carousel2">
+        <div>
+          <div class="carousel-item">
+              <div class="carousel-item-heading">
+               <div> <img src="<%=gitSha%>/assets/images/zoho-images/qoute-start.png" class="img-fluid testimonial-qoute"></div>
+
+                <div><img src="<%=gitSha%>/assets/images/zoho-images/double-the-donation.webp" class="img-fluid testimonial-company"></div>
+
+                <div><img src="<%=gitSha%>/assets/images/zoho-images/qoute-end.png" class="img-fluid testimonial-qoute"></div>
+                
+              </div>
+              <p class="carousel-comment text-center">We've been looking for a Sales Engagement platform for our team. We compared Klenty to Outreach, Salesloft, & Reply.io. Klenty's integration with Zoho combined with its robust functionality makes it the clear winner for any Zoho user! Prospects sync seamlessly to kick off personalized outreach cadences. It's playing a big role in our sales team's success. I can't speak highly enough about Klenty!</p>
+              <div class="degednation">
+                <div class="degednation-box">
+                  <div class="degednation-box-wrapper">
+                    <img src="<%=gitSha%>/assets/images/zoho-images/profile/Adam Weinger Zoho.PNG" class="testimonial-profile">
+                    <div class="testimonial-name-box">
+                      <p class="testimonial-name">Adam Weinger</p>
+                      <p class="testimonial-profile-position">President
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+         
+        </div>
+        <div>   <div class="carousel-item">
+          <div class="carousel-item-heading">
+           <div> <img src="<%=gitSha%>/assets/images/zoho-images/qoute-start.png" class="img-fluid testimonial-qoute"></div>
+
+            <div><img src="<%=gitSha%>/assets/images/zoho-images/nexus marketing.png" class="img-fluid testimonial-company"></div>
+
+            <div><img src="<%=gitSha%>/assets/images/zoho-images/qoute-end.png" class="img-fluid testimonial-qoute"></div>
+            
+          </div>
+          <p class="carousel-comment text-center">Klenty is awesome! Its integration with Zoho is the reason we chose their platform versus some of the other competitors out there. Look forward to continuing to use Klenty and scaling it at our organization.
+          </p>
+          <div class="degednation">
+            <div class="degednation-box">
+              <div class="degednation-box-wrapper">
+                <img src="<%=gitSha%>/assets/images/zoho-images/profile/Rafi Norberg Zoho.PNG" class="testimonial-profile">
+                <div class="testimonial-name-box">
+                  <p class="testimonial-name">Rafi Norberg</p>
+                  <p class="testimonial-profile-position">President
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div></div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- form-section -->
+<div class="container form-section">
+  <div class="row">
+    <div class="col-12 col-md-6 left-form">
+      <div class="one-wrapper">
+        <div class="has-one">
+            <p>#1</p>
+        </div>
+        <div>
+            <p class="sales">
+              Sales Engagement Platform on 
+            </p>
+        </div>
+     </div>
+     <div class="text-center">
+      <img src="<%=gitSha%>/assets/images/index/section-2/zoho.png" class="img-fluid pipedrive-img"><br>
+      <img src="<%=gitSha%>/assets/images/index/section-2/stars.svg" class="img-fluid mt-3">
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="img-label-section">
+        <img src="<%=gitSha%>/assets/images/bedges/1.png" class="lable-img img-fluid">
+        <img src="<%=gitSha%>/assets/images/bedges/2.png" class="lable-img img-fluid">
+        <img src="<%=gitSha%>/assets/images/bedges/3.png" class="lable-img img-fluid">
+        <img src="<%=gitSha%>/assets/images/bedges/4.png" class="lable-img img-fluid">
+        <img src="<%=gitSha%>/assets/images/bedges/5.png" class="lable-img img-fluid">
+      </div>
+      <p class="try-klenty">Try Klenty for free</p>
+      <div class="section-4-form ">
+        <form action="<%= proxyUrl%>auth/register/redirect" method="post" class="FormEmailValid">
+          <input type="text" class="form-control kl_register_username" placeholder="Enter Work Mail"
+            aria-label="Recipient's username" aria-describedby="basic-addon2" name="username">
+          <button class="input-group-text email-button btn btn-arrow" id="basic-addon2" type="submit">
+            <p>Get Started<i class="fa fa-long-arrow-right" aria-hidden="true"></i></p></button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+ <!-- footer section -->
+
+ <%- include('./partials/footer.ejs'); %>
+
+ 
+ <!-- footer end -->
+ 
+  <!-- Request Demo Modal start-->
+ <%- include('./partials/requestDemoUI.ejs'); %>
+   
+ 
+
+ 
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="<%=gitSha%>/assets/images/index/owl/owl.carousel.min.js"></script>
+    <script src="<%=gitSha%>/assets/js/klentyNavbar.js"></script>
+      <script src="<%=gitSha%>/assets/js/registerDropdown.js"></script>
+  <script src="<%=gitSha%>/assets/js/pagesenseCookie.js"></script>
+    <script src="<%=gitSha%>/assets/js/formEmailValid.js"></script>
+    <script src="<%=gitSha%>/assets/js/footerEbook.js"></script>
+    <script>
+      $('#myTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+          })
+
+
+      $(document).ready(function () {
+         $(".owl-carousel").owlCarousel();
+      });
+
+      $('.owl-carousel1').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        smartSpeed: 1500,
+         responsive: {
+            0: {
+               items: 3
+            },
+            600: {
+               items: 3
+            },
+            1000: {
+               items: 5
+            }
+         }
+      })
+      $('.owl-carousel2').owlCarousel({
+        loop:true,
+        margin:10,
+        autoplay: true,
+        autoplayTimeout: 10000,
+        smartSpeed: 1300,
+        nav:true,
+         responsive: {
+            0: {
+               items: 1
+            }
+         }
+      })
+
+      $(window).scroll(function () {
+         var scroll = $(window).scrollTop();
+
+         if (scroll >= 50) {
+            $(".navbar").addClass("scrollEffect");
+         } else {
+            $(".navbar").removeClass("scrollEffect");
+         }
+      });
+
+      $( ".owl-next").html(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg>`);
+        $( ".owl-prev").html(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg>`);
+    </script>
+
+      <!-- Leadworx -->
+      <!-- <script src="//adpxl.co/fvtiXCmv/an.js"></script><noscript><img src="//adpxl.co/fvtiXCmv/spacer.gif" alt=""></noscript> -->
+
+      <!--Klenty Tracking Code End-->
+      <script>window.__kl__tr__Id='56b0cd2e86e2e10a001ebe4f',function(){var t=document.createElement('script');t.type='text/javascript',t.async=!0,t.src='https://s3-us-west-2.amazonaws.com/sitetrack/klenty_track.js';var e=document.getElementsByTagName('script')[0];e.parentNode.insertBefore(t,e)}();</script>
+
+      <!-- Intercom -->
+      <script>
+        window.intercomSettings = {
+          app_id: "aglk8j0d"
+        };
+      </script>
+      <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/aglk8j0d';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+      <!-- Facebook -->
+      <script type="text/javascript">
+          $('#login_fb_btn').click(function() {
+              fbq('track', 'login');
+          });
+          $('#login_fb_btn1').click(function() {
+              fbq('track', 'login');
+          });
+      </script>
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPB485Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+        
+
+      <!-- demo request -->
+  <script src="<%=gitSha%>/assets/js/demo-request.js"></script>
+  
+
+  
+    <!-- Request Modal Script -->
+    <script>
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 50) {
+                $(".navbar11").addClass("scrollEffect");
+            } else {
+                $(".navbar11").removeClass("scrollEffect");
+            }
+        });
+    </script>
+      <!-- google tag manager  utm source,utm medium, utm campaign , utm_term ,  gclid -->
+      <script src="<%=gitSha%>/assets/js/gist.js"></script>
+      <!--google tag manager  utm source,utm medium, utm campaign , utm_term ,end -->
+    <script>(function (c, p, d, u, id, i) {
+      id = ''; // Optional Custom ID for user in your system
+      u = 'https://tracking.g2crowd.com/attribution_tracking/conversions/' + c + '.js?p=' + encodeURI(p) + '&e=' + id;
+      i = document.createElement('script');
+      i.type = 'application/javascript';
+      i.async = true;
+      i.src = u;
+      d.getElementsByTagName('head')[0].appendChild(i);
+    }("4456", document.location.href, document));
+    </script>
+</body>
+</html>
